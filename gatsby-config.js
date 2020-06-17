@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: "Cloud Nord",
     author: "@mderoullers",
-    description: "A website to get the informations about the Cloud Nord event"
+    description: "A website to get the information about the Cloud Nord event"
   },
   plugins: [
     'gatsby-plugin-react-helmet',
@@ -19,16 +19,13 @@ module.exports = {
       },
     },
     {
-      resolve: 'gatsby-source-strapi',
+      resolve: `gatsby-source-filesystem`,
       options: {
-        apiURL: 'http://localhost:1337',
-        contentTypes: [ // List of the Content Types you want to be able to request from Gatsby.
-          'section',
-          'user'
-        ],
-        queryLimit: 1000,
+        name: `contents`,
+        path: `${__dirname}/src/contents`,
       },
     },
+    `gatsby-transformer-remark`,
     'gatsby-plugin-sass',
     'gatsby-plugin-offline'
   ],  
