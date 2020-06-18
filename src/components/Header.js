@@ -7,14 +7,14 @@ class Header extends React.Component {
             <StaticQuery
                 query={graphql`
                 query {
-                    markdownRemark {
-                      frontmatter {
-                        h_title
-                        h_catchphrase
-                        h_date
-                        h_button
+                    markdownRemark(fileAbsolutePath: {regex: "/header/"}) {
+                        frontmatter {
+                          h_date
+                          h_catchphrase
+                          h_button
+                          h_title
+                        }
                       }
-                    }
                   }
                 `}
                 render={(data) => (
