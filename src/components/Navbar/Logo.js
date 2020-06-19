@@ -14,7 +14,7 @@ const LogoWrap = styled.div`
 const Logo = () => {
     const data = useStaticQuery(graphql`
         query {
-            file(name: { eq: "website-icon" }, extension: { eq: "png" }) {
+            file(name: { eq: "cloud-nord-icon" }, extension: { eq: "png" }) {
                 childImageSharp {
                     fluid(maxWidth: 50, pngQuality: 80) {
                         ...GatsbyImageSharpFluid
