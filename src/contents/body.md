@@ -1,4 +1,0 @@
----
-b_title: "Qu'est-ce que Cloud Nord ?"
-b_description: "Adipiscing a commodo ante nunc accumsan et interdum mi ante adipiscing. A nunc lobortis non nisl amet vis sed volutpat aclacus nascetur ac non. Lorem curae et ante amet sapien sed tempus adipiscing id accumsan."
----

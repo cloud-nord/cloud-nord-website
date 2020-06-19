@@ -17,11 +17,11 @@ class Homepage extends React.Component {
             <StaticQuery
                 query={graphql`
                     query {
-                        markdownRemark (fileAbsolutePath: {regex: "/body/"}) {
+                        markdownRemark (fileAbsolutePath: {regex: "/description/"}) {
                           frontmatter {
                             b_title
-                            b_description
                           }
+                          html
                         }
                       }
                     `}
@@ -31,15 +31,15 @@ class Homepage extends React.Component {
 
                         <section id="one" className="main style1">
                             <div className="grid-wrapper">
-                                <div className="col-6">
+                                <div className="col-12">
                                     <header className="major">
                                         <h2>{data.markdownRemark.frontmatter.b_title}</h2>
                                     </header>
-                                    <p>{data.markdownRemark.frontmatter.b_description}</p>
+                                    <div dangerouslySetInnerHTML={{__html: data.markdownRemark.html}}></div>
                                 </div>
-                                <div className="col-6">
+                                {/*<div className="col-6">
                                     <span className="image fit"><img src={pic01} alt="" /></span>
-                                </div>
+                                </div>*/}
                             </div>
                         </section>
 
