@@ -111,8 +111,8 @@ class Homepage extends React.Component {
                                 </header>
                                 <p>Une idée, un partenariat, un sponsoring... Ecrivez-nous !</p>
                                 <ul className="actions uniform">
-                                    <li><a href="#" className="button special">Email</a></li>
-                                    <li><a href="#" className="button">Linkedin</a></li>
+                                    <li><a href="mailto:cloudnord2020@gmail.com" className="button special">Email</a></li>
+                                    <li><a href="https://www.linkedin.com/company/cloud-nord/" className="button">Linkedin</a></li>
                                 </ul>
                             </div>
                         </section>
