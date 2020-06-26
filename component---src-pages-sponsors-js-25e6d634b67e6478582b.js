@@ -1,2 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[6],{GxIa:function(e,t,n){"use strict";n.r(t);var a=n("q1tI"),s=n.n(a),u=n("Bl7J");t.default=function(){return s.a.createElement(u.a,null,s.a.createElement("h1",null,"We are Sponsors"),s.a.createElement("p",null,"You just hit a route that doesn't exist... the sadness."))}}}]);
-//# sourceMappingURL=component---src-pages-sponsors-js-25e6d634b67e6478582b.js.map
