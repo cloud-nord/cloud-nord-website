@@ -4,10 +4,9 @@ import {Link, graphql, StaticQuery} from 'gatsby'
 
 import Layout from '../components/layout';
 
-import pic01 from '../assets/images/pic01.jpg'
-import pic02 from '../assets/images/pic02.jpg'
-import pic03 from '../assets/images/pic03.jpg'
-import pic04 from '../assets/images/pic04.jpg'
+import pic_conference from '../assets/images/conference.jpg'
+import pic_quickie from '../assets/images/quickie.jpg'
+import pic_workshop from '../assets/images/workshop.jpg'
 
 class Homepage extends React.Component {
     render() {
@@ -74,24 +73,24 @@ class Homepage extends React.Component {
                             </div>
                         </section>
 
-                        <section id="three" className="main style1 special">
+                        <section id="formats" className="main style1 special">
                             <div className="grid-wrapper">
                                 <div className="col-12">
                                     <p>{data.markdownRemark.frontmatter.cadres_title}</p>
                                 </div>
 
                                 <div className="col-4">
-                                    <span className="image fit"><img src={pic02} alt="" /></span>
+                                    <span className="image fit"><img src={pic_conference} alt="Conference" /></span>
                                     <h3>{data.markdownRemark.frontmatter.cadre1_title}</h3>
                                     <p>{data.markdownRemark.frontmatter.cadre1_text}</p>
                                 </div>
                                 <div className="col-4">
-                                    <span className="image fit"><img src={pic03} alt="" /></span>
+                                    <span className="image fit"><img src={pic_quickie} alt="Quickie" /></span>
                                     <h3>{data.markdownRemark.frontmatter.cadre2_title}</h3>
                                     <p>{data.markdownRemark.frontmatter.cadre2_text}</p>
                                 </div>
                                 <div className="col-4">
-                                    <span className="image fit"><img src={pic04} alt="" /></span>
+                                    <span className="image fit"><img src={pic_workshop} alt="Workshop" /></span>
                                     <h3>{data.markdownRemark.frontmatter.cadre3_title}</h3>
                                     <p>{data.markdownRemark.frontmatter.cadre3_text}</p>
                                 </div>
@@ -99,7 +98,7 @@ class Homepage extends React.Component {
                             </div>
                         </section>
 
-                        <section id="four" className="main style2 special">
+                        <section id="contact" className="main style2 special">
                             <div className="container">
                                 <header className="major">
                                     <h2>Envie de rejoindre le projet ?</h2>
