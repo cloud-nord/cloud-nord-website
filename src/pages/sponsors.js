@@ -14,7 +14,7 @@ class Sponsors extends React.Component {
       ));
 
     return (
-      <Layout>
+      <Layout displayHeader="false">
         <div className="grid-wrapper">
           <div className="col-12">
             <section id="one" className="main style1">

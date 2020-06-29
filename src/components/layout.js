@@ -25,13 +25,16 @@ class Template extends React.Component {
     }
   }
 
+
   render() {
     const { children } = this.props;
 
     return (
       <div className={`body ${this.state.loading}`}>
         <Navbar />
-        <Header />
+        {!this.props.displayHeader &&
+          <Header />
+        }
         {children}
         <Footer />
       </div>
