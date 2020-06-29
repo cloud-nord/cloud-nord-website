@@ -1,5 +1,7 @@
 ---
-title: bronze
+title: "Bronze"
+icon: "icon alt fa-trophy"
+iconColor: "#AD8A56"
 rank: 30
 ---
 - Votre logo sur le site

@@ -1,5 +1,7 @@
 ---
-title: silver
+title: "Silver"
+icon: "icon alt fa-trophy"
+iconColor: "#B4B4B4"
 rank: 20
 ---
 - Votre logo sur le site

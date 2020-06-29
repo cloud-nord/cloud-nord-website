@@ -7,6 +7,7 @@ import styled from "styled-components";
 const CardWrap = styled.div`
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
+  padding: 0.2em 1em 0em 1em;
 `;
 // ========================
 
@@ -18,41 +19,25 @@ const CardHeader = styled.h1`
 `;
 // ========================
 
+const CardIcon = styled.i`
+    color: ${props => props.iconColor || "black"};
+`;
 // ========================
 // Primary copy (inc. links, etc)
-const CardCopy = styled.div``;
+const CardContent = styled.div``;
 // ========================
 
 class Card extends React.Component {
   render() {
     return (
       <CardWrap>
-        <CardHeader>{this.props.title}</CardHeader>
-        <CardCopy>
+          <CardHeader><CardIcon iconColor={this.props.iconColor} className={this.props.icon}/> {this.props.title}</CardHeader>
+        <CardContent>
           <div dangerouslySetInnerHTML={{ __html: this.props.content }} />
-        </CardCopy>
+        </CardContent>
       </CardWrap>
     );
   }
 }
 
 export default Card;
-
-/*export const query = graphql`
-    query {
-        site {
-            siteMetadata {
-                title
-            }
-        }
-        allImageSharp {
-            edges {
-                node {
-                    fixed(width: 60) {
-                        ...GatsbyImageSharpFixed
-                    }
-                }
-            }
-        }
-    }
-`*/

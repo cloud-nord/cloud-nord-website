@@ -1,5 +1,7 @@
 ---
-title: gold
+title: "Gold"
+icon: "icon alt fa-trophy"
+iconColor: "#AF9500"
 rank: 10
 ---
 - Votre logo sur le site

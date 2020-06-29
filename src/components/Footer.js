@@ -38,7 +38,7 @@ class Footer extends React.Component {
         <ul className="copyright">
           <li>&copy; 2020 association Cloud Nord</li>
           <li>
-            Fait avec <i className="icon alt fa-heart"></i> à Lille par la team
+            Fait avec <i className="icon alt fa-heart"/> à Lille par la team
             Cloud Nord. Crédit photo : Unsplash
           </li>
         </ul>

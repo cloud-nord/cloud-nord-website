@@ -4,27 +4,15 @@ import Layout from "../components/layout";
 import Card from "../components/Card";
 
 class Sponsors extends React.Component {
-  /*createSponsorTypes = () => {
-        const sponsorTypes = []
-
-        this.props.data.allMarkdownRemark.nodes.slice(1).forEach(({node}) => {
-            sponsorTypes.push(<div className="col-4"><Card name=node.frontmatter.title content={node}/></div>)
-        })
-
-        return sponsorTypes
-    }*/
-
   render() {
     const sponsorTypes = this.props.data.allMarkdownRemark.nodes
       .slice(1)
       .map(node => (
         <div className="col-4">
-          <Card title={node.frontmatter.title} content={node.html} />
+          <Card icon={node.frontmatter.icon} iconColor={node.frontmatter.iconColor} title={node.frontmatter.title} content={node.html} />
         </div>
       ));
-    /* this.props.data.allMarkdownRemark.nodes.slice(1).map((node) => {
-            sponsorTypes.push(<div className="col-4"><Card name={node.frontmatter.title} content={node}/></div>)
-        })*/
+
     return (
       <Layout>
         <div className="grid-wrapper">
@@ -59,8 +47,10 @@ export const pageQuery = graphql`
     ) {
       nodes {
         frontmatter {
-          title
-          rank
+            title
+            icon
+            rank
+            iconColor
         }
         html
       }
