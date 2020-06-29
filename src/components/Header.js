@@ -25,7 +25,7 @@ class Header extends React.Component {
                                 {data.markdownRemark.frontmatter.h_catchphrase}</h1>
                             <p>{data.markdownRemark.frontmatter.h_date}</p>
                             <ul className="actions">
-                                <li><a href="#one" className="button scrolly">{data.markdownRemark.frontmatter.h_button}</a></li>
+                                <li><a href="#contact" className="button scrolly">{data.markdownRemark.frontmatter.h_button}</a></li>
                             </ul>
                         </div>
                     </section>

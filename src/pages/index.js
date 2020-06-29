@@ -20,6 +20,13 @@ class Homepage extends React.Component {
                         markdownRemark (fileAbsolutePath: {regex: "/description/"}) {
                           frontmatter {
                             b_title
+                            cadres_title
+                            cadre1_title
+                            cadre1_text
+                            cadre2_title
+                            cadre2_text
+                            cadre3_title
+                            cadre3_text
                           }
                           html
                         }
@@ -70,41 +77,29 @@ class Homepage extends React.Component {
                         <section id="three" className="main style1 special">
                             <div className="grid-wrapper">
                                 <div className="col-12">
-                                    <header className="major">
-                                        <h2>Adipiscing amet consequat</h2>
-                                    </header>
-                                    <p>Ante nunc accumsan et aclacus nascetur ac ante amet sapien sed.</p>
+                                    <p>{data.markdownRemark.frontmatter.cadres_title}</p>
                                 </div>
 
                                 <div className="col-4">
-                                    <span className="image fit"><img src={pic02} alt="" /></span>
-                                    <h3>Magna feugiat lorem</h3>
-                                    <p>Adipiscing a commodo ante nunc magna lorem et interdum mi ante nunc lobortis non amet vis sed volutpat et nascetur.</p>
-                                    <ul className="actions">
-                                        <li><a href="#" className="button">More</a></li>
-                                    </ul>
+                                    <span className="image fit"><img src={pic_conference} alt="Conference" /></span>
+                                    <h3>{data.markdownRemark.frontmatter.cadre1_title}</h3>
+                                    <p>{data.markdownRemark.frontmatter.cadre1_text}</p>
                                 </div>
                                 <div className="col-4">
-                                    <span className="image fit"><img src={pic03} alt="" /></span>
-                                    <h3>Magna feugiat lorem</h3>
-                                    <p>Adipiscing a commodo ante nunc magna lorem et interdum mi ante nunc lobortis non amet vis sed volutpat et nascetur.</p>
-                                    <ul className="actions">
-                                        <li><a href="#" className="button">More</a></li>
-                                    </ul>
+                                    <span className="image fit"><img src={pic_quickie} alt="Quickie" /></span>
+                                    <h3>{data.markdownRemark.frontmatter.cadre2_title}</h3>
+                                    <p>{data.markdownRemark.frontmatter.cadre2_text}</p>
                                 </div>
                                 <div className="col-4">
-                                    <span className="image fit"><img src={pic04} alt="" /></span>
-                                    <h3>Magna feugiat lorem</h3>
-                                    <p>Adipiscing a commodo ante nunc magna lorem et interdum mi ante nunc lobortis non amet vis sed volutpat et nascetur.</p>
-                                    <ul className="actions">
-                                        <li><a href="#" className="button">More</a></li>
-                                    </ul>
+                                    <span className="image fit"><img src={pic_workshop} alt="Workshop" /></span>
+                                    <h3>{data.markdownRemark.frontmatter.cadre3_title}</h3>
+                                    <p>{data.markdownRemark.frontmatter.cadre3_text}</p>
                                 </div>
 
                             </div>
                         </section>
 
-                        <section id="four" className="main style2 special">
+                        <section id="contact" className="main style2 special">
                             <div className="container">
                                 <header className="major">
                                     <h2>Envie de rejoindre le projet ?</h2>
