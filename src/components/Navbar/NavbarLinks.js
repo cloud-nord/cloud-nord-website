@@ -1,6 +1,6 @@
-import React from "react"
-import styled from "styled-components"
-import { Link } from "gatsby"
+import React from "react";
+import styled from "styled-components";
+import { Link } from "gatsby";
 
 const NavItem = styled(Link)`
   text-decoration: none;
@@ -36,15 +36,15 @@ const NavItem = styled(Link)`
     font-size: 1.5rem;
     z-index: 6;
   }
-`
+`;
 const NavbarLinks = () => {
-    return (
-        <>
-            <NavItem to="/">CFP</NavItem>
-            <NavItem to="/sponsors">DEVENIR SPONSOR</NavItem>
-            <NavItem to="/">L'EQUIPE</NavItem>
-        </>
-    )
-}
+  return (
+    <>
+      <NavItem to="/">CFP</NavItem>
+      <NavItem to="/sponsors">DEVENIR SPONSOR</NavItem>
+      <NavItem to="/">L'EQUIPE</NavItem>
+    </>
+  );
+};
 
-export default NavbarLinks
+export default NavbarLinks;

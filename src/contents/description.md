@@ -1,5 +1,5 @@
 ---
-b_title: "Qu'est-ce que Cloud Nord ?"
+title: "Qu'est-ce que Cloud Nord ?"
 cadres_title: "Les formats proposés : "
 cadre1_title: "Conférence"
 cadre1_text: "Présentation d'un sujet technique, d'un outil ou d'une approche, REX après utilisation en production..."
@@ -7,6 +7,9 @@ cadre2_title: "Quickie"
 cadre2_text: "Aborde un sujet de manière rapide en allant à l'essentiel. Format idéal pour les speakers débutants !"
 cadre3_title: "Workshop"
 cadre3_text: "Pour aller dans le détail, faire un deep-dive sur une techno, mettre les mains sur le clavier."
+pic_conference: "conference.jpg"
+pic_quickie: "quickie.jpg"
+pic_workshop: "workshop.jpg"
 ---
 
 La conférence Lilloise dédiée au Cloud !  
