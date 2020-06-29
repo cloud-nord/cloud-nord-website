@@ -4,6 +4,8 @@ icon: "icon alt fa-trophy"
 iconColor: "#AF9500"
 rank: 10
 ---
-- Votre logo sur le site
-- Votre logo sur le sweat-shirt de l'orga
-- Votre nom cité sur supports de communication
+- Présence du logo plus large ainsi que sur les replay Youtube
+- 1 tract Conf possible
+- Avantage Silver
+- Avantage Bronze
+- La satisfaction de soutenir une association 
