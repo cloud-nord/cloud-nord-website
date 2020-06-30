@@ -20,14 +20,6 @@ class Footer extends React.Component {
           </li>
           <li>
             <a
-              href="https://github.com/cloud-nord"
-              className="icon alt fa-github"
-            >
-              <span className="label">GitHub</span>
-            </a>
-          </li>
-          <li>
-            <a
               href="mailto:cloudnord2020@gmail.com"
               className="icon alt fa-envelope"
             >
