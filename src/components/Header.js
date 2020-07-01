@@ -20,7 +20,6 @@ class Header extends React.Component {
         render={data => (
           <section id="header">
             <div className="inner">
-              <span className="icon major fa-cloud"></span>
               <h1>
                 <strong>{data.markdownRemark.frontmatter.h_title}</strong>
                 <br />
