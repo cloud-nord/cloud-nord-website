@@ -28,6 +28,13 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
+        name: `sponsors-offer`,
+        path: `${__dirname}/src/contents/sponsors-offer`
+      }
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
         name: `images`,
         path: `${__dirname}/src/assets/images`
       }
