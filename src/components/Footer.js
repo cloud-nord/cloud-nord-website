@@ -14,7 +14,7 @@ class Footer extends React.Component {
             </a>
           </li>
           <li>
-            <a href="#" className="icon alt fa-twitter">
+            <a href="https://twitter.com/Cloud_Nord" className="icon alt fa-twitter">
               <span className="label">Twitter</span>
             </a>
           </li>
