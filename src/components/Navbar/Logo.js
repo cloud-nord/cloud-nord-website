@@ -8,10 +8,6 @@ const LogoWrap = styled.div`
   flex: 0 1 65px;
   border-bottom: none!important;
   
-  @media only screen and (orientation: landscape) {
-    flex: 0 1 10px;
-  }
-  
   @media all and (min-width : 321px) and (max-width : 1980px){
     flex: 0 1 50px;
   }
