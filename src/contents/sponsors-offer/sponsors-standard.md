@@ -1,5 +1,5 @@
 ---
-title: "Basic"
+title: "Standard"
 icon: "icon alt fa-heart"
 iconColor: "#FFF"
 rank: 20
