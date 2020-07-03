@@ -25,7 +25,7 @@ const Navigation = styled.nav`
     left: 0;
   }
   
-  @media screen and (orientation: landscape) {
+  @media screen and (max-width: 1000px) and (max-height: 450px) and (orientation: landscape) {
     height: 20vh;
   }
 `;
