@@ -13,6 +13,10 @@ class Sponsors extends React.Component {
                 </div>
             ));
 
+        const divStyle = {
+            display: 'flex',
+        };
+
         return (
             <Layout displayHeader="false">
                 <div className="grid-wrapper">
@@ -31,6 +35,7 @@ class Sponsors extends React.Component {
                         </section>
                     </div>
                     {sponsorsOffers}
+                    <br/>
                 </div>
             </Layout>
         );

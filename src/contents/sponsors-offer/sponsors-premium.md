@@ -1,7 +1,7 @@
 ---
-title: "Gold"
-icon: "icon alt fa-trophy"
-iconColor: "#AF9500"
+title: "Premium"
+icon: "icon alt fa-star"
+iconColor: "#FFF"
 rank: 10
 ---
 - Votre logo associé à l'événement et relais sur les réseaux sociaux

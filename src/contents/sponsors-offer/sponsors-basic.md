@@ -1,7 +1,7 @@
 ---
-title: "Silver"
-icon: "icon alt fa-trophy"
-iconColor: "#B4B4B4"
+title: "Basic"
+icon: "icon alt fa-heart"
+iconColor: "#FFF"
 rank: 20
 ---
 - Votre logo associé à l'événement et relais sur les Réseaux sociaux
