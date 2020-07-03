@@ -1,5 +1,6 @@
 import React from "react";
 import {graphql} from "gatsby";
+import Img from "gatsby-image";
 import Layout from "../components/layout";
 import Card from "../components/Card";
 
@@ -13,30 +14,61 @@ class Sponsors extends React.Component {
                 </div>
             ));
 
-        const divStyle = {
-            display: 'flex',
-        };
+        const listSponsorsPremium = this.props.data.sponsorsPremiumLogos.edges
+            .map(edge => (
+                <div className="col-3">
+                    <Img fluid={edge.node.childImageSharp.fluid}/>
+                </div>
+            ));
+
+        const listSponsorsStandard = this.props.data.sponsorsStandardLogos.edges
+            .map(edge => (
+                <div className="col-3">
+                    <Img fluid={edge.node.childImageSharp.fluid}/>
+                </div>
+            ));
 
         return (
             <Layout displayHeader="false">
-                <div className="grid-wrapper">
-                    <div className="col-12">
-                        <section className="main style1">
-                            <header className="major">
-                                <h2>
-                                    {this.props.data.sponsorsPage.childMarkdownRemark.frontmatter.title}
-                                </h2>
-                            </header>
-                            <div
-                                dangerouslySetInnerHTML={{
-                                    __html: this.props.data.sponsorsPage.childMarkdownRemark.html
-                                }}
-                            />
-                        </section>
+                <section id="sponsor-offers" className="main style1">
+                    <div className="grid-wrapper">
+                        <div className="col-12">
+                            <section className="main style1">
+                                <header className="major">
+                                    <h2>
+                                        {this.props.data.sponsorsPage.childMarkdownRemark.frontmatter.title}
+                                    </h2>
+                                </header>
+                                <div
+                                    dangerouslySetInnerHTML={{
+                                        __html: this.props.data.sponsorsPage.childMarkdownRemark.html
+                                    }}
+                                />
+                            </section>
+                        </div>
+                        {sponsorsOffers}
                     </div>
-                    {sponsorsOffers}
-                    <br/>
-                </div>
+                </section>
+                <section id="sponsors-premium" className="main style1">
+                    <div className="grid-wrapper">
+                        <div className="col-12">
+                            <header className="major">
+                                <h2>Partenaires Premium</h2>
+                            </header>
+                        </div>
+                        {listSponsorsPremium}
+                    </div>
+                </section>
+                <section id="sponsors-standard" className="main style1">
+                    <div className="grid-wrapper">
+                        <div className="col-12">
+                            <header className="major">
+                                <h2>Partenaires standard</h2>
+                            </header>
+                        </div>
+                        {listSponsorsStandard}
+                    </div>
+                </section>
             </Layout>
         );
     }
@@ -63,6 +95,28 @@ export const pageQuery = graphql`
                     title
                 }
                 html
+            }
+        }
+        sponsorsPremiumLogos: allFile(filter: {extension: {regex: "/(png|jpe?g)/"}, relativePath: {regex: "/sponsors/premium/"}}) {
+            edges {
+                node {
+                    childImageSharp {
+                        fluid {
+                            ...GatsbyImageSharpFluid
+                        }
+                    }
+                }
+            }
+        }
+        sponsorsStandardLogos: allFile(filter: {extension: {regex: "/(png|jpe?g)/"}, relativePath: {regex: "/sponsors/standard/"}}) {
+            edges {
+                node {
+                    childImageSharp {
+                        fluid {
+                            ...GatsbyImageSharpFluid
+                        }
+                    }
+                }
             }
         }
     }
