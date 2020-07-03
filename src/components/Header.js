@@ -24,7 +24,8 @@ class Header extends React.Component {
                         <div className="inner">
                             <h1>
                                 <strong>{data.headerPage.childMarkdownRemark.frontmatter.title}</strong>
-                                <br/>
+                            </h1>
+                            <h1>
                                 {data.headerPage.childMarkdownRemark.frontmatter.catchphrase}
                             </h1>
                             <p>{data.headerPage.childMarkdownRemark.frontmatter.date}</p>
