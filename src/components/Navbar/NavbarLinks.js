@@ -42,7 +42,7 @@ const NavbarLinks = () => {
     <>
       <NavItem to="/">CFP</NavItem>
       <NavItem to="/sponsors">DEVENIR SPONSOR</NavItem>
-      <NavItem to="/">L'EQUIPE</NavItem>
+      <NavItem to="/team">L'EQUIPE</NavItem>
     </>
   );
 };

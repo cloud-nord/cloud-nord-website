@@ -17,7 +17,7 @@ class Sponsors extends React.Component {
             <Layout displayHeader="false">
                 <div className="grid-wrapper">
                     <div className="col-12">
-                        <section id="one" className="main style1">
+                        <section className="main style1">
                             <header className="major">
                                 <h2>
                                     {this.props.data.sponsorsPage.childMarkdownRemark.frontmatter.title}
