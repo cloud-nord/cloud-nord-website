@@ -15,7 +15,7 @@ class Homepage extends React.Component {
     return (
       <StaticQuery
         query={graphql`
-          query {
+          query IndexQuery {
             markdownRemark(fileAbsolutePath: { regex: "/description/" }) {
               frontmatter {
                 title

@@ -24,6 +24,10 @@ const Navigation = styled.nav`
     right: 0;
     left: 0;
   }
+  
+  @media screen and (orientation: landscape) {
+    height: 20vh;
+  }
 `;
 
 const Toggle = styled.div`

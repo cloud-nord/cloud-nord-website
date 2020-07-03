@@ -8,17 +8,17 @@ const LogoWrap = styled.div`
   flex: 0 1 65px;
   border-bottom: none!important;
   
-  @media (max-width: 768px) and (orientation: landscape) {
-    flex: 0 1 25px;
+  @media only screen and (orientation: landscape) {
+    flex: 0 1 10px;
   }
   
-  @media only screen and (min-width : 321px) {
+  @media all and (min-width : 321px) and (max-width : 1980px){
     flex: 0 1 50px;
   }
   
-  @media only screen and (max-width : 320px) {
+  @media all and (max-width : 320px) {
     flex: 0 1 35px;
-  }
+  } 
 `;
 const Logo = () => {
   const data = useStaticQuery(graphql`
