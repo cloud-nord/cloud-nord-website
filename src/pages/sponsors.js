@@ -47,6 +47,15 @@ class Sponsors extends React.Component {
                             </section>
                         </div>
                         {sponsorsOffers}
+                        <div className="col-12">
+                            <section className="main special">
+                                <div className="container">
+                                    <ul className="actions uniform">
+                                        <li><a href="#" className="button">Devenir partenaire</a></li>
+                                    </ul>
+                                </div>
+                            </section>
+                        </div>
                     </div>
                 </section>
                 <section id="sponsors-premium" className="main style1">
