@@ -5,8 +5,8 @@ cadre1_title: "Conférence"
 cadre1_text: "Présentation d'un sujet technique, d'un outil ou d'une approche, REX après utilisation en production..."
 cadre2_title: "Quickie"
 cadre2_text: "Aborde un sujet de manière rapide en allant à l'essentiel. Format idéal pour les speakers débutants !"
-cadre3_title: "Workshop"
-cadre3_text: "Pour aller dans le détail, faire un deep-dive sur une techno, mettre les mains sur le clavier."
+cadre3_title: "Deep Dive"
+cadre3_text: "Pour aller dans le détail sur une techno, suivre un exemple concret en plusieurs étapes..."
 pic_conference: "conference.jpg"
 pic_quickie: "quickie.jpg"
 pic_workshop: "workshop.jpg"
@@ -20,7 +20,7 @@ On a à coeur de faire un événement à destination de tous, profil technique e
 La première session aura lieu le 19 Novembre et proposera différents types de formats :
 - Des sessions courtes type *quickie* de 20 minutes
 - Des formats conférences de 45 minutes
-- Des sessions de type workshop pour mettre en pratique d'une durée de 3h
+- Des sessions de type *deep dive*, conférences longues d'une durée de 3h
 
 Nous avons besoin de vous pour créer le programme le plus qualitatif possible et ravir nos participants. Le CFP ouvrira bientôt !
 
