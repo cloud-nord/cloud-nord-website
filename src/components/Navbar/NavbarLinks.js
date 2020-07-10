@@ -41,8 +41,7 @@ const NavbarLinks = () => {
   return (
     <>
       <NavItem to="/">CFP</NavItem>
-      <NavItem to="/sponsors">DEVENIR SPONSOR</NavItem>
-      <NavItem to="/team">L'EQUIPE</NavItem>
+      <NavItem to="/sponsors">SPONSORS</NavItem>
     </>
   );
 };
