@@ -39,7 +39,7 @@ class Sponsors extends React.Component {
                                         {this.props.data.sponsorsPage.childMarkdownRemark.frontmatter.title}
                                     </h2>
                                 </header>
-                                <div
+                                <divPREMIUM
                                     dangerouslySetInnerHTML={{
                                         __html: this.props.data.sponsorsPage.childMarkdownRemark.html
                                     }}
@@ -51,7 +51,7 @@ class Sponsors extends React.Component {
                             <section className="main special">
                                 <div className="container">
                                     <ul className="actions uniform">
-                                        <li><a href="#" className="button">Devenir partenaire</a></li>
+                                        <li><a href="#" className="button special">Devenir sponsor</a></li>
                                     </ul>
                                 </div>
                             </section>
