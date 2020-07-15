@@ -42,6 +42,7 @@ const NavbarLinks = () => {
     <>
       <NavItem to="http://cfp.cloudnord.fr">CFP</NavItem>
       <NavItem to="/sponsors">SPONSORS</NavItem>
+      <NavItem to="/association">L'ASSO</NavItem>
     </>
   );
 };
