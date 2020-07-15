@@ -10,15 +10,15 @@ const CardWrap = styled.div`
 const CardHeader = styled.h1`
   font-weight: bold;
   text-align: center;
-    line-height: 20px!important;
+  line-height: 20px!important;
 `;
 
 const CardIcon = styled.i`
-    color: ${props => props.iconColor || "black"};
+  color: ${props => props.iconColor || "black"};
 `;
 
 const CardContent = styled.div`
-    padding: 40px 1em 1em 1em;
+  padding: 40px 1em 1em 1em;
 `;
 
 class Card extends React.Component {
