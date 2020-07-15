@@ -521,12 +521,24 @@
 	}
 
 	ul {
-		list-style: disc;
+		list-style: none;
 		margin: 0 0 _size(element-margin) 0;
 		padding-left: 1em;
 
 		li {
 			padding-left: 0.5em;
+			text-align: center;
+		}
+
+		li:after {
+			display: block;
+			content: "\00b7 \00b7 \00b7";
+			font-size: x-large;
+			font-weight: bold;
+		}
+
+		li:last-child:after {
+			content: none;
 		}
 
 		&.alt {
@@ -563,6 +575,10 @@
 					}
 				}
 			}
+
+			li:after {
+				content: none;
+			}
 		}
 
 		&.major-icons {
@@ -592,6 +608,10 @@
 					}
 				}
 			}
+
+			li:after {
+				content: none;
+			}
 		}
 
 		&.actions {
@@ -607,6 +627,10 @@
 				&:last-child {
 					padding-right: 0;
 				}
+			}
+
+			li:after {
+				content: none;
 			}
 
 			&.small {
@@ -1046,6 +1070,10 @@
 					margin-left: 0;
 					padding: 0;
 				}
+			}
+
+			li:after {
+				content: none;
 			}
 		}
 	}

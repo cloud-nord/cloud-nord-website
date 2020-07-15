@@ -40,9 +40,8 @@ const NavItem = styled(Link)`
 const NavbarLinks = () => {
   return (
     <>
-      <NavItem to="/">CFP</NavItem>
-      <NavItem to="/sponsors">DEVENIR SPONSOR</NavItem>
-      <NavItem to="/team">L'EQUIPE</NavItem>
+      <NavItem to="http://cfp.cloudnord.fr">CFP</NavItem>
+      <NavItem to="/sponsors">SPONSORS</NavItem>
     </>
   );
 };

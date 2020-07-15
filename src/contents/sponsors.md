@@ -1,5 +1,5 @@
 ---
-title: Sponsors Et Partenaires
+title: Sponsors & Partenaires
 titleOfferProfessional: Sponsors Professional
 titleOfferAssociate: Sponsors Associate
 rank: 0
