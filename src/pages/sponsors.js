@@ -14,14 +14,14 @@ class Sponsors extends React.Component {
                 </div>
             ));
 
-        const listSponsorsPremium = this.props.data.sponsorsPremiumLogos.edges
+        const listSponsorsProfessional = this.props.data.sponsorsProfessionalLogos.edges
             .map(edge => (
                 <div className="col-3">
                     <Img fluid={edge.node.childImageSharp.fluid}/>
                 </div>
             ));
 
-        const listSponsorsStandard = this.props.data.sponsorsStandardLogos.edges
+        const listSponsorsAssociate = this.props.data.sponsorsAssociateLogos.edges
             .map(edge => (
                 <div className="col-3">
                     <Img fluid={edge.node.childImageSharp.fluid}/>
@@ -49,24 +49,24 @@ class Sponsors extends React.Component {
                         {sponsorsOffers}
                     </div>
                 </section>
-                <section id="sponsors-premium" className="main style1">
+                <section id="sponsors-professional" className="main style1">
                     <div className="grid-wrapper">
                         <div className="col-12">
                             <header className="major">
-                                <h2>Partenaires Premium</h2>
+                                <h2>{this.props.data.sponsorsPage.childMarkdownRemark.frontmatter.titleOfferProfessional}</h2>
                             </header>
                         </div>
-                        {listSponsorsPremium}
+                        {listSponsorsProfessional}
                     </div>
                 </section>
-                <section id="sponsors-standard" className="main style1">
+                <section id="sponsors-associate" className="main style1">
                     <div className="grid-wrapper">
                         <div className="col-12">
                             <header className="major">
-                                <h2>Partenaires standard</h2>
+                                <h2>{this.props.data.sponsorsPage.childMarkdownRemark.frontmatter.titleOfferAssociate}</h2>
                             </header>
                         </div>
-                        {listSponsorsStandard}
+                        {listSponsorsAssociate}
                     </div>
                 </section>
             </Layout>
@@ -93,11 +93,13 @@ export const pageQuery = graphql`
             childMarkdownRemark {
                 frontmatter {
                     title
+                    titleOfferProfessional
+                    titleOfferAssociate
                 }
                 html
             }
         }
-        sponsorsPremiumLogos: allFile(filter: {extension: {regex: "/(png|jpe?g)/"}, relativePath: {regex: "/sponsors/premium/"}}) {
+        sponsorsProfessionalLogos: allFile(filter: {extension: {regex: "/(png|jpe?g)/"}, relativePath: {regex: "/sponsors/professional/"}}) {
             edges {
                 node {
                     childImageSharp {
@@ -108,7 +110,7 @@ export const pageQuery = graphql`
                 }
             }
         }
-        sponsorsStandardLogos: allFile(filter: {extension: {regex: "/(png|jpe?g)/"}, relativePath: {regex: "/sponsors/standard/"}}) {
+        sponsorsAssociateLogos: allFile(filter: {extension: {regex: "/(png|jpe?g)/"}, relativePath: {regex: "/sponsors/associate/"}}) {
             edges {
                 node {
                     childImageSharp {

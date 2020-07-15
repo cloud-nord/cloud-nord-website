@@ -1,5 +1,7 @@
 ---
 title: Sponsors Et Partenaires
+titleOfferProfessional: Sponsors Professional
+titleOfferAssociate: Sponsors Associate
 rank: 0
 ---
 ### Devenir un sponsor de l'événement
