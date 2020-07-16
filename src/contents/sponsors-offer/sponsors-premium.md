@@ -1,5 +1,5 @@
 ---
-title: "PREMIUM"
+title: "PROFESSIONAL"
 icon: "icon alt fa-star"
 iconColor: "#f5d30f"
 rank: 10

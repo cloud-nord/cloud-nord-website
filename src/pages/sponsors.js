@@ -46,7 +46,7 @@ class Sponsors extends React.Component {
                                         {this.props.data.sponsorsPage.childMarkdownRemark.frontmatter.title}
                                     </h2>
                                 </header>
-                                <divPREMIUM
+                                <div
                                     dangerouslySetInnerHTML={{
                                         __html: this.props.data.sponsorsPage.childMarkdownRemark.html
                                     }}
@@ -69,7 +69,7 @@ class Sponsors extends React.Component {
                     <div className="grid-wrapper">
                         <div className="col-12">
                             <header className="major">
-                                <h2>Sponsors premiums</h2>
+                                <h2>Sponsors Professional</h2>
                             </header>
                         </div>
                         {listSponsorsPremium}
@@ -79,7 +79,7 @@ class Sponsors extends React.Component {
                     <div className="grid-wrapper">
                         <div className="col-12">
                             <header className="major">
-                                <h2>Sponsors standards</h2>
+                                <h2>Associate</h2>
                             </header>
                         </div>
                         {listSponsorsStandard}

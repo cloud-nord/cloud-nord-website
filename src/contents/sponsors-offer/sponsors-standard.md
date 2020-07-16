@@ -1,5 +1,5 @@
 ---
-title: "STANDARD"
+title: "ASSOCIATE"
 icon: "icon alt fa-heart"
 iconColor: "#dc1d13"
 rank: 20
