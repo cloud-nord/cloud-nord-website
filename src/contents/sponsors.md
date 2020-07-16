@@ -1,5 +1,5 @@
 ---
-title: Sponsors & Partenaires
+title: Sponsors
 titleOfferProfessional: Sponsors Professional
 titleOfferAssociate: Sponsors Associate
 rank: 0
@@ -14,3 +14,6 @@ Voici 5 raisons de prendre contact :
 3. Affirmer le dynamisme de votre structure et renforcer votre réseau local 
 4. Une mise en avant de vos services, produits et compétences durant l'événement à l’ensemble de la communauté, partenaires associés 
 5. Rencontrer vos futurs collaborateurs, partenaires ou fournisseurs
+
+### Vous souhaitez en savoir plus ? 
+Télécharger notre <a href="https://drive.google.com/file/d/1QXDLs_cpqfP3Xh2RdWRUibLo9NUZaIxu/view?usp=sharing" target="_blank">kit Sponsoring <i class="fa fa-external-link" aria-hidden="true"></a>
