@@ -46,7 +46,7 @@ class Sponsors extends React.Component {
                                         {this.props.data.sponsorsPage.childMarkdownRemark.frontmatter.title}
                                     </h2>
                                 </header>
-                                <divPREMIUM
+                                <div
                                     dangerouslySetInnerHTML={{
                                         __html: this.props.data.sponsorsPage.childMarkdownRemark.html
                                     }}
@@ -91,6 +91,7 @@ class Sponsors extends React.Component {
                             <header className="major">
                                 <h2>Partenaires</h2>
                             </header>
+                            <p>{this.props.data.sponsorsPage.childMarkdownRemark.frontmatter.partnerMessage}</p>
                         </div>
                         {listPartenaires}
                     </div>
@@ -121,6 +122,7 @@ export const pageQuery = graphql`
                     title
                     titleOfferProfessional
                     titleOfferAssociate
+                    partnerMessage
                 }
                 html
             }

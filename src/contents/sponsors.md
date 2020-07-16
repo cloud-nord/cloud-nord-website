@@ -3,6 +3,7 @@ title: Sponsors
 titleOfferProfessional: Sponsors Professional
 titleOfferAssociate: Sponsors Associate
 rank: 0
+partnerMessage: Merci aussi à nos partenaires qui nous aident à l'organisation de cet événement !
 ---
 ### Devenir un sponsor de l'événement
 
@@ -16,4 +17,4 @@ Voici 5 raisons de prendre contact :
 5. Rencontrer vos futurs collaborateurs, partenaires ou fournisseurs
 
 ### Vous souhaitez en savoir plus ? 
-Télécharger notre <a href="https://drive.google.com/file/d/1QXDLs_cpqfP3Xh2RdWRUibLo9NUZaIxu/view?usp=sharing" target="_blank">kit Sponsoring <i class="fa fa-external-link" aria-hidden="true"></a>
+Télécharger notre [kit Sponsoring](https://drive.google.com/file/d/1QXDLs_cpqfP3Xh2RdWRUibLo9NUZaIxu/view?usp=sharing)
