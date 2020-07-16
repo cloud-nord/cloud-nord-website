@@ -9,6 +9,11 @@ class Association extends React.Component {
                 <div className="grid-wrapper">
                     <div className="col-12">
                         <section id="association" className="main style1">
+                            <header className="major">
+                                <h2>
+                                    {this.props.data.associationPage.childMarkdownRemark.frontmatter.title}
+                                </h2>
+                            </header>
                             <div
                                 dangerouslySetInnerHTML={{
                                     __html: this.props.data.associationPage.childMarkdownRemark.html
@@ -26,10 +31,13 @@ export default Association;
 
 export const pageQuery = graphql`
     query AssoQuery {
-        associationPage: file(relativePath: {eq: "association.md"}, sourceInstanceName: {eq: "contents"}) {
-            childMarkdownRemark {
-                html
-            }
+      associationPage: file(relativePath: {eq: "association.md"}, sourceInstanceName: {eq: "contents"}) {
+        childMarkdownRemark {
+          html
+          frontmatter {
+            title
+          }
         }
+      }
     }
 `;

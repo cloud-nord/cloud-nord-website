@@ -58,7 +58,7 @@ class Sponsors extends React.Component {
                             <section className="main special">
                                 <div className="container">
                                     <ul className="actions uniform">
-                                        <li><a href="Plaquette_Sponsor_Cloud_Nord_2020.pdf" className="button special">Devenir sponsor</a></li>
+                                        <li><a href="https://drive.google.com/file/d/1QXDLs_cpqfP3Xh2RdWRUibLo9NUZaIxu/view?usp=sharing" target="_blank" rel="noreferrer noopener" className="button special">Devenir sponsor</a></li>
                                     </ul>
                                 </div>
                             </section>
