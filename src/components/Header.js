@@ -13,6 +13,7 @@ class Header extends React.Component {
                                 date
                                 catchphrase
                                 button
+                                text
                                 title
                             }
                         }
@@ -28,10 +29,13 @@ class Header extends React.Component {
                             <h1>
                                 {data.headerPage.childMarkdownRemark.frontmatter.catchphrase}
                             </h1>
-                            <p>{data.headerPage.childMarkdownRemark.frontmatter.date}</p>
+                            <h4>{data.headerPage.childMarkdownRemark.frontmatter.date}</h4>
+                            <h5>
+                                {data.headerPage.childMarkdownRemark.frontmatter.text}
+                            </h5>
                             <ul className="actions">
                                 <li>
-                                    <a href="#contact" className="button scrolly">
+                                    <a href="https://cloudnord2020.typeform.com/to/Z1YdP1LB" target="_blank" rel="noopener noreferrer" className="button scrolly">
                                         {data.headerPage.childMarkdownRemark.frontmatter.button}
                                     </a>
                                 </li>
