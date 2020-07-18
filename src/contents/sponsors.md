@@ -17,4 +17,4 @@ Voici 5 raisons de prendre contact :
 5. Rencontrer vos futurs collaborateurs, partenaires ou fournisseurs
 
 ### Vous souhaitez en savoir plus ? 
-Télécharger notre [kit Sponsoring](https://drive.google.com/file/d/1QXDLs_cpqfP3Xh2RdWRUibLo9NUZaIxu/view?usp=sharing)
+Télécharger notre [kit Sponsoring](https://drive.google.com/file/d/19NsPDqRpFVpyADNElibUPWgXAgPYSi1s/view)

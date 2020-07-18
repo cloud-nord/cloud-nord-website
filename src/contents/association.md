@@ -5,4 +5,4 @@ Cloud Nord c’est avant tout une association indépendante à but non lucratif,
 
 Cloud Nord est une initiative lancée par quelques lillois passionnés de Tech et désireux de mettre en avant ce qu’il se fait dans le région et partager expériences et nouveautés technologiques.
 
-Merci à la première Team organisatrice : [Maxime](https://twitter.com/mderoullers), [Alexandre](https://twitter.com/a_vandekerkhove), [Emmanuel](https://twitter.com/EmmanuelDemey) & [Emmanuelle](https://twitter.com/EGouvart), [Pierre Alexandre](https://www.linkedin.com/in/paulalexandrechretien/?originalSubdomain=fr) et [Nicolas](https://twitter.com/NicolasZ_Ippon) !
+Merci à la première Team organisatrice : [Maxime](https://twitter.com/mderoullers), [Alexandre](https://twitter.com/a_vandekerkhove), [Emmanuel](https://twitter.com/EmmanuelDemey) & [Emmanuelle](https://twitter.com/EGouvart), [Pierre Alexandre](https://www.linkedin.com/in/paulalexandrechretien/?originalSubdomain=fr) et [Nicolas](https://www.linkedin.com/in/nicolaszago/) !
