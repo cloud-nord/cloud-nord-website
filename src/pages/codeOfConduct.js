@@ -2,7 +2,7 @@ import React from "react";
 import { graphql } from "gatsby";
 import Layout from "../components/layout";
 
-class Association extends React.Component {
+class CodeOfConduct extends React.Component {
   render() {
     return (
       <Layout displayHeader="false">
@@ -12,14 +12,14 @@ class Association extends React.Component {
               <header className="major">
                 <h2>
                   {
-                    this.props.data.associationPage.childMarkdownRemark
+                    this.props.data.codeOfConductPage.childMarkdownRemark
                       .frontmatter.title
                   }
                 </h2>
               </header>
               <div
                 dangerouslySetInnerHTML={{
-                  __html: this.props.data.associationPage.childMarkdownRemark
+                  __html: this.props.data.codeOfConductPage.childMarkdownRemark
                     .html
                 }}
               />
@@ -31,12 +31,12 @@ class Association extends React.Component {
   }
 }
 
-export default Association;
+export default CodeOfConduct;
 
 export const pageQuery = graphql`
-  query AssoQuery {
-    associationPage: file(
-      relativePath: { eq: "association.md" }
+  query ConductQuery {
+    codeOfConductPage: file(
+      relativePath: { eq: "code-of-conduct.md" }
       sourceInstanceName: { eq: "contents" }
     ) {
       childMarkdownRemark {

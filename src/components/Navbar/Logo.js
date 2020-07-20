@@ -6,15 +6,15 @@ import { Link, useStaticQuery, graphql } from "gatsby";
 const LogoWrap = styled.div`
   margin: auto 0;
   flex: 0 1 65px;
-  border-bottom: none!important;
-  
-  @media all and (min-width : 321px) and (max-width : 1980px){
+  border-bottom: none !important;
+
+  @media all and (min-width: 321px) and (max-width: 1980px) {
     flex: 0 1 50px;
   }
-  
-  @media all and (max-width : 320px) {
+
+  @media all and (max-width: 320px) {
     flex: 0 1 35px;
-  } 
+  }
 `;
 const Logo = () => {
   const data = useStaticQuery(graphql`

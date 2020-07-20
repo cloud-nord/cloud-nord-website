@@ -24,7 +24,7 @@ const Navigation = styled.nav`
     right: 0;
     left: 0;
   }
-  
+
   @media screen and (max-width: 1000px) and (max-height: 450px) and (orientation: landscape) {
     height: 20vh;
   }

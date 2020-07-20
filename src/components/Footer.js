@@ -14,7 +14,10 @@ class Footer extends React.Component {
             </a>
           </li>
           <li>
-            <a href="https://twitter.com/Cloud_Nord" className="icon alt fa-twitter">
+            <a
+              href="https://twitter.com/Cloud_Nord"
+              className="icon alt fa-twitter"
+            >
               <span className="label">Twitter</span>
             </a>
           </li>
@@ -30,10 +33,13 @@ class Footer extends React.Component {
         <ul className="copyright">
           <li>&copy; 2020 association Cloud Nord</li>
           <li>
-            Crédits : <a href="https://html5up.net/">HTML5 UP</a> 
-            &nbsp;+&nbsp;<a href="https://www.gatsbyjs.org/">Gatsby</a> 
+            Crédits : <a href="https://html5up.net/">HTML5 UP</a>
+            &nbsp;+&nbsp;<a href="https://www.gatsbyjs.org/">Gatsby</a>
             &nbsp;+&nbsp;<a href="https://unsplash.com/">Unsplash</a>
           </li>
+        </ul>
+        <ul className="copyright">
+          <li><a href="/codeOfConduct/">Code of Conduct</a></li>
         </ul>
       </section>
     );
