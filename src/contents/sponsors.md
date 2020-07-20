@@ -4,6 +4,7 @@ titleOfferProfessional: Sponsors Professional
 titleOfferAssociate: Sponsors Associate
 rank: 0
 partnerMessage: Merci aussi à nos partenaires qui nous aident à l'organisation de cet événement !
+plaquetteLink: https://drive.google.com/file/d/1aOZmMtGHoYINWUV3cpeyR-wN9vLr_C92/view
 ---
 ### Devenir un sponsor de l'événement
 

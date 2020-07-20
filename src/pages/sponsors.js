@@ -68,7 +68,10 @@ class Sponsors extends React.Component {
                   <ul className="actions uniform">
                     <li>
                       <a
-                        href="https://drive.google.com/file/d/1QXDLs_cpqfP3Xh2RdWRUibLo9NUZaIxu/view?usp=sharing"
+                        href={
+                          this.props.data.sponsorsPage.childMarkdownRemark
+                            .frontmatter.plaquetteLink
+                        }
                         target="_blank"
                         rel="noreferrer noopener"
                         className="button special"
@@ -161,6 +164,7 @@ export const pageQuery = graphql`
           titleOfferProfessional
           titleOfferAssociate
           partnerMessage
+          plaquetteLink
         }
         html
       }
