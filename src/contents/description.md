@@ -20,7 +20,7 @@ On a à coeur de faire un événement à destination de tous, profil technique e
 La première session aura lieu le 19 Novembre et proposera différents types de formats :
 - Des sessions courtes type *quickie* de 20 minutes
 - Des formats conférences de 45 minutes
-- Des sessions de type *deep dive*, conférences longues d'une durée de 3h
+- Des sessions de type *deep dive*, conférences longues d'une durée de 2h
 
 Nous avons besoin de vous pour créer le programme le plus qualitatif possible et ravir nos participants. Le CFP ouvrira bientôt !
 
