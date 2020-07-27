@@ -44,22 +44,20 @@ class Sponsors extends React.Component {
         <section id="sponsor-offers" className="main style1">
           <div className="grid-wrapper">
             <div className="col-12">
-              <section className="main style1">
-                <header className="major">
-                  <h2>
-                    {
-                      this.props.data.sponsorsPage.childMarkdownRemark
-                        .frontmatter.title
-                    }
-                  </h2>
-                </header>
-                <div
-                  dangerouslySetInnerHTML={{
-                    __html: this.props.data.sponsorsPage.childMarkdownRemark
-                      .html
-                  }}
-                />
-              </section>
+              <header className="major">
+                <h2>
+                  {
+                    this.props.data.sponsorsPage.childMarkdownRemark
+                      .frontmatter.title
+                  }
+                </h2>
+              </header>
+              <div
+                dangerouslySetInnerHTML={{
+                  __html: this.props.data.sponsorsPage.childMarkdownRemark
+                    .html
+                }}
+              />
             </div>
             {sponsorsOffers}
             <div className="col-12">
