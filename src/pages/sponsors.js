@@ -47,15 +47,14 @@ class Sponsors extends React.Component {
               <header className="major">
                 <h2>
                   {
-                    this.props.data.sponsorsPage.childMarkdownRemark
-                      .frontmatter.title
+                    this.props.data.sponsorsPage.childMarkdownRemark.frontmatter
+                      .title
                   }
                 </h2>
               </header>
               <div
                 dangerouslySetInnerHTML={{
-                  __html: this.props.data.sponsorsPage.childMarkdownRemark
-                    .html
+                  __html: this.props.data.sponsorsPage.childMarkdownRemark.html
                 }}
               />
             </div>

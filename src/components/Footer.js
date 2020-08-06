@@ -39,8 +39,14 @@ class Footer extends React.Component {
           </li>
         </ul>
         <ul className="copyright">
-          <li><a href="/codeOfConduct/">Code of Conduct</a></li>
-          <li><a href="https://drive.google.com/drive/folders/1P-EIGURyrEvMpRafA7NaAXVYP0z6AZEo?usp=sharing">Kit Presse</a></li>
+          <li>
+            <a href="/codeOfConduct/">Code of Conduct</a>
+          </li>
+          <li>
+            <a href="https://drive.google.com/drive/folders/1P-EIGURyrEvMpRafA7NaAXVYP0z6AZEo?usp=sharing">
+              Kit Presse
+            </a>
+          </li>
         </ul>
       </section>
     );

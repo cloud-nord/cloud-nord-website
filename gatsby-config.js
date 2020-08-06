@@ -3,7 +3,7 @@ module.exports = {
     title: "Cloud Nord",
     author: "@mderoullers",
     description: "A website to get the information about the Cloud Nord event",
-    siteUrl: 'http://cloudnord.fr/'
+    siteUrl: "http://cloudnord.fr/"
   },
   plugins: [
     "gatsby-plugin-react-helmet",
@@ -40,7 +40,7 @@ module.exports = {
         path: `${__dirname}/src/assets/images`
       }
     },
-    'gatsby-plugin-cname',
+    "gatsby-plugin-cname",
     "gatsby-plugin-sass",
     // "gatsby-plugin-offline",
     "gatsby-plugin-styled-components",
