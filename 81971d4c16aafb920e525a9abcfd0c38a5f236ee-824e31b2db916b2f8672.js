@@ -615,7 +615,7 @@
                 ((_ = s),
                 0 < j &&
                   void 0 !== (S = o(2, B, _, r, O, E, V, f, d, f)) &&
-                    0 === (B = S).length)
+                  0 === (B = S).length)
               )
                 return G + B + U;
               if (((B = _.join(",") + "{" + B + "}"), 0 != R * I)) {
@@ -638,7 +638,7 @@
           return (
             0 < j &&
               void 0 !== (c = o(-2, f, s, s, O, E, f.length, 0, 0, 0)) &&
-                (f = c),
+              (f = c),
             "",
             (I = 0),
             (E = O = 1),

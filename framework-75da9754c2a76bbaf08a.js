@@ -1028,8 +1028,8 @@
           ? 0 === l.type
           : !r &&
             2 < t.length &&
-              ("o" === t[0] || "O" === t[0]) &&
-              ("n" === t[1] || "N" === t[1])) ||
+            ("o" === t[0] || "O" === t[0]) &&
+            ("n" === t[1] || "N" === t[1])) ||
           ((function(e, t, n, r) {
             if (
               null == t ||
@@ -3598,7 +3598,8 @@
           (a = o),
             (i.shared.pending = null),
             null !== (u = e.alternate) &&
-              null !== (u = u.updateQueue) && (u.baseQueue = o);
+              null !== (u = u.updateQueue) &&
+              (u.baseQueue = o);
         }
         if (null !== a) {
           u = a.next;
@@ -3738,7 +3739,8 @@
           ? e.shouldComponentUpdate(r, i, a)
           : !t.prototype ||
               !t.prototype.isPureReactComponent ||
-              !Ur(n, r) || !Ur(l, i);
+              !Ur(n, r) ||
+              !Ur(l, i);
       }
       function gi(e, t, n) {
         var r = !1,
