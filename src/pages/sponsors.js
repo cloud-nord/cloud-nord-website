@@ -1,6 +1,7 @@
 import React from "react";
 import {graphql} from "gatsby";
 import Img from "gatsby-image";
+import { useMedia } from 'react-media';
 import Layout from "../components/layout";
 import Card from "../components/Card";
 
@@ -70,14 +71,17 @@ class Sponsors extends React.Component {
         let listSponsorsProfessional
         let listSponsorsAssociate
         let listPartenaires
-        if (window.innerWidth > windowWidthMobile) {
-            listSponsorsProfessional = listSponsorsProfessionalDesktop
-            listSponsorsAssociate = listSponsorsAssociateDesktop
-            listPartenaires = listPartenairesDesktop
-        } else {
+
+        if (useMedia({ query: "(max-width: 980px)" })) {
+            // display mobile
             listSponsorsProfessional = listSponsorsProfessionalMobile
             listSponsorsAssociate = listSponsorsAssociateMobile
             listPartenaires = listPartenairesMobile
+        } else {
+            // display desktop
+            listSponsorsProfessional = listSponsorsProfessionalDesktop
+            listSponsorsAssociate = listSponsorsAssociateDesktop
+            listPartenaires = listPartenairesDesktop
         }
 
         return (
