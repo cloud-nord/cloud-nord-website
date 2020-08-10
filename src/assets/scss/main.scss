@@ -27,6 +27,9 @@
 ));
 
 /* Basic */
+	.mobile-image {
+		display: none;
+	}
 
 	body {
 		background: _palette(bg);
@@ -1208,6 +1211,15 @@
 				text-align: center;
 			}
 
+		/* Image */
+			.desktop-image {
+				display: none;
+			}
+
+			.mobile-image {
+				display: block;
+			}
+
 	}
 
 /* Small */
@@ -1295,6 +1307,15 @@
 
 			#footer {
 				@include padding(3em, 1.5em, (0,0,_size(element-margin),0));
+			}
+
+		/* Image */
+			.desktop-image {
+				display: none;
+			}
+
+			.mobile-image {
+				display: block;
 			}
 
 	}
@@ -1387,6 +1408,15 @@
 						}
 					}
 				}
+			}
+
+		/* Image */
+			.desktop-image {
+				display: none;
+			}
+
+			.mobile-image {
+				display: block;
 			}
 
 	}

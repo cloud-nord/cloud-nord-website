@@ -1,14 +1,11 @@
 import React from "react";
 import {graphql} from "gatsby";
 import Img from "gatsby-image";
-import { useMedia } from 'react-media';
 import Layout from "../components/layout";
 import Card from "../components/Card";
 
 class Sponsors extends React.Component {
     render() {
-        const windowWidthMobile = 980
-
         const mobileImageStyle = {
             marginTop: '50px',
             marginBottom: '50px'
@@ -26,7 +23,7 @@ class Sponsors extends React.Component {
 
         const listSponsorsProfessionalDesktop = this.props.data.sponsorsProfessionalLogosDesktop.edges.map(
             edge => (
-                <div className="col-3">
+                <div className="col-3 desktop-image">
                     <Img fluid={edge.node.childImageSharp.fluid}/>
                 </div>
             )
@@ -34,7 +31,7 @@ class Sponsors extends React.Component {
 
         const listSponsorsProfessionalMobile = this.props.data.sponsorsProfessionalLogosMobile.edges.map(
             edge => (
-                <div className="col-3" style={mobileImageStyle}>
+                <div className="col-3 mobile-image" style={mobileImageStyle}>
                     <Img fluid={edge.node.childImageSharp.fluid}/>
                 </div>
             )
@@ -42,7 +39,7 @@ class Sponsors extends React.Component {
 
         const listSponsorsAssociateDesktop = this.props.data.sponsorsAssociateLogosDesktop.edges.map(
             edge => (
-                <div className="col-3">
+                <div className="col-3 desktop-image">
                     <Img fluid={edge.node.childImageSharp.fluid}/>
                 </div>
             )
@@ -50,39 +47,39 @@ class Sponsors extends React.Component {
 
         const listSponsorsAssociateMobile = this.props.data.sponsorsAssociateLogosMobile.edges.map(
             edge => (
-                <div className="col-3" style={mobileImageStyle}>
+                <div className="col-3 mobile-image" style={mobileImageStyle}>
                     <Img fluid={edge.node.childImageSharp.fluid}/>
                 </div>
             )
         );
 
         const listPartenairesDesktop = this.props.data.partenairesLogosDesktop.edges.map(edge => (
-            <div className="col-3">
+            <div className="col-3 desktop-image">
                 <Img fluid={edge.node.childImageSharp.fluid}/>
             </div>
         ));
 
         const listPartenairesMobile = this.props.data.partenairesLogosMobile.edges.map(edge => (
-            <div className="col-3" style={mobileImageStyle}>
+            <div className="col-3 mobile-image" style={mobileImageStyle}>
                 <Img fluid={edge.node.childImageSharp.fluid}/>
             </div>
         ));
 
-        let listSponsorsProfessional
-        let listSponsorsAssociate
-        let listPartenaires
-
-        if (useMedia({ query: "(max-width: 980px)" })) {
-            // display mobile
-            listSponsorsProfessional = listSponsorsProfessionalMobile
-            listSponsorsAssociate = listSponsorsAssociateMobile
-            listPartenaires = listPartenairesMobile
-        } else {
-            // display desktop
-            listSponsorsProfessional = listSponsorsProfessionalDesktop
-            listSponsorsAssociate = listSponsorsAssociateDesktop
-            listPartenaires = listPartenairesDesktop
-        }
+        // let listSponsorsProfessional
+        // let listSponsorsAssociate
+        // let listPartenaires
+        //
+        // if (isMobileScreen) {
+        //     // display mobile
+        //     listSponsorsProfessional = listSponsorsProfessionalMobile
+        //     listSponsorsAssociate = listSponsorsAssociateMobile
+        //     listPartenaires = listPartenairesMobile
+        // } else {
+        //     // display desktop
+        //     listSponsorsProfessional = listSponsorsProfessionalDesktop
+        //     listSponsorsAssociate = listSponsorsAssociateDesktop
+        //     listPartenaires = listPartenairesDesktop
+        // }
 
         return (
             <Layout displayHeader="false">
@@ -139,7 +136,8 @@ class Sponsors extends React.Component {
                                 </h2>
                             </header>
                         </div>
-                        {listSponsorsProfessional}
+                        {listSponsorsProfessionalMobile}
+                        {listSponsorsProfessionalDesktop}
                     </div>
                 </section>
                 <section id="sponsors-associate" className="main style1">
@@ -154,7 +152,8 @@ class Sponsors extends React.Component {
                                 </h2>
                             </header>
                         </div>
-                        {listSponsorsAssociate}
+                        {listSponsorsAssociateMobile}
+                        {listSponsorsAssociateDesktop}
                     </div>
                 </section>
                 <section id="partenaires" className="main style1">
@@ -170,7 +169,8 @@ class Sponsors extends React.Component {
                                 }
                             </p>
                         </div>
-                        {listPartenaires}
+                        {listPartenairesMobile}
+                        {listPartenairesDesktop}
                     </div>
                 </section>
             </Layout>
