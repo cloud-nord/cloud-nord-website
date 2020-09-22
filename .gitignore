@@ -4,3 +4,4 @@
 /.graphqlconfig
 /remote-schema.graphql
 /.idea/
+.DS_Store

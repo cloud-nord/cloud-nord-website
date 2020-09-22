@@ -18,11 +18,12 @@ Cette initiative découle de la motivation d’un groupe de passionnés et bén�
 On a à coeur de faire un événement à destination de tous, profil technique et moins technique, en ligne pour permettre à tous d’y participer et se retrouver.  
 
 La première session aura lieu le 19 Novembre et proposera différents types de formats :
+
 - Des sessions courtes type *quickie* de 20 minutes
 - Des formats conférences de 45 minutes
 - Des sessions de type *deep dive*, conférences longues d'une durée de 2h
 
-Nous avons besoin de vous pour créer le programme le plus qualitatif possible et ravir nos participants. Le CFP ouvrira bientôt !
+Nous avons besoin de vous pour créer le programme le plus qualitatif possible et ravir nos participants. Le [CFP](https://conference-hall.io/public/event/J6FsCDEf8VCmOLArZe8P) est ouvert !
 
 A bientôt  
 La Team Cloud Nord
