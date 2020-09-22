@@ -10,6 +10,37 @@ class Sponsors extends React.Component {
             marginTop: '50px',
             marginBottom: '50px'
         }
+
+        const sponsorsProfessionalLinks = [
+            {linkTo: "https://azure.microsoft.com/fr-fr/"},
+            {linkTo: "https://www.claranet.fr"}
+        ];
+
+        const sponsorsAssociateLinks = [
+            {linkTo: "https://www.axa.fr/"},
+            {linkTo: "https://fr.ippon.tech/"}
+        ];
+
+        const partenairesLinks = [
+            {linkTo: "https://welovedevs.com/fr/"},
+            {linkTo: "https://www.meetup.com/fr-FR/Cloud-Native-Computing-Lille-Meetup/"},
+            {linkTo: "https://www.meetup.com/fr-FR/DevOps-Lille/"},
+            {linkTo: "https://www.meetup.com/fr-FR/Lille-AWS-Amazon-Web-Services-User-Group/"},
+            {linkTo: "http://www.lillesagency.com/"}
+        ];
+
+        const listSponsorsProfessionalDesktop = this.props.data.sponsorsProfessionalLogosDesktop.edges.map((o, i) => Object.assign({}, o, sponsorsProfessionalLinks[i]));
+
+        const listSponsorsProfessionalMobile = this.props.data.sponsorsProfessionalLogosMobile.edges.map((o, i) => Object.assign({}, o, sponsorsProfessionalLinks[i]));
+
+        const listSponsorsAssociateDesktop = this.props.data.sponsorsAssociateLogosDesktop.edges.map((o, i) => Object.assign({}, o, sponsorsAssociateLinks[i]));
+
+        const listSponsorsAssociateMobile = this.props.data.sponsorsAssociateLogosMobile.edges.map((o, i) => Object.assign({}, o, sponsorsAssociateLinks[i]));
+
+        const listPartenairesDesktop = this.props.data.partenairesLogosDesktop.edges.map((o, i) => Object.assign({}, o, partenairesLinks[i]));
+
+        const listPartenairesMobile = this.props.data.partenairesLogosMobile.edges.map((o, i) => Object.assign({}, o, partenairesLinks[i]));
+
         const sponsorsOffers = this.props.data.sponsorsOffers.nodes.map(node => (
             <div className="col-6">
                 <Card
@@ -21,65 +52,61 @@ class Sponsors extends React.Component {
             </div>
         ));
 
-        const listSponsorsProfessionalDesktop = this.props.data.sponsorsProfessionalLogosDesktop.edges.map(
+        const listSponsorsProfessionalDesktopToDisplay = listSponsorsProfessionalDesktop.map(
             edge => (
                 <div className="col-3 desktop-image">
-                    <Img fluid={edge.node.childImageSharp.fluid}/>
+                    <a href={edge.linkTo}>
+                        <Img fluid={edge.node.childImageSharp.fluid}/>
+                    </a>
                 </div>
             )
         );
 
-        const listSponsorsProfessionalMobile = this.props.data.sponsorsProfessionalLogosMobile.edges.map(
+        const listSponsorsProfessionalMobileToDisplay = listSponsorsProfessionalMobile.map(
             edge => (
                 <div className="col-3 mobile-image" style={mobileImageStyle}>
-                    <Img fluid={edge.node.childImageSharp.fluid}/>
+                     <a href={edge.linkTo}>
+                        <Img fluid={edge.node.childImageSharp.fluid}/>
+                    </a>
                 </div>
             )
         );
 
-        const listSponsorsAssociateDesktop = this.props.data.sponsorsAssociateLogosDesktop.edges.map(
+        const listSponsorsAssociateDesktopToDisplay = listSponsorsAssociateDesktop.map(
             edge => (
                 <div className="col-3 desktop-image">
-                    <Img fluid={edge.node.childImageSharp.fluid}/>
+                     <a href={edge.linkTo}>
+                        <Img fluid={edge.node.childImageSharp.fluid}/>
+                    </a>
                 </div>
             )
         );
 
-        const listSponsorsAssociateMobile = this.props.data.sponsorsAssociateLogosMobile.edges.map(
+        const listSponsorsAssociateMobileToDisplay = listSponsorsAssociateMobile.map(
             edge => (
                 <div className="col-3 mobile-image" style={mobileImageStyle}>
-                    <Img fluid={edge.node.childImageSharp.fluid}/>
+                     <a href={edge.linkTo}>
+                        <Img fluid={edge.node.childImageSharp.fluid}/>
+                    </a>
                 </div>
             )
         );
 
-        const listPartenairesDesktop = this.props.data.partenairesLogosDesktop.edges.map(edge => (
+        const listPartenairesDesktopToDisplay = listPartenairesDesktop.map(edge => (
             <div className="col-3 desktop-image">
-                <Img fluid={edge.node.childImageSharp.fluid}/>
+                <a href={edge.linkTo}>
+                    <Img fluid={edge.node.childImageSharp.fluid}/>
+                </a>
             </div>
         ));
 
-        const listPartenairesMobile = this.props.data.partenairesLogosMobile.edges.map(edge => (
+        const listPartenairesMobileToDisplay = listPartenairesMobile.map(edge => (
             <div className="col-3 mobile-image" style={mobileImageStyle}>
-                <Img fluid={edge.node.childImageSharp.fluid}/>
+                <a href={edge.linkTo}>
+                    <Img fluid={edge.node.childImageSharp.fluid}/>
+                </a>
             </div>
         ));
-
-        // let listSponsorsProfessional
-        // let listSponsorsAssociate
-        // let listPartenaires
-        //
-        // if (isMobileScreen) {
-        //     // display mobile
-        //     listSponsorsProfessional = listSponsorsProfessionalMobile
-        //     listSponsorsAssociate = listSponsorsAssociateMobile
-        //     listPartenaires = listPartenairesMobile
-        // } else {
-        //     // display desktop
-        //     listSponsorsProfessional = listSponsorsProfessionalDesktop
-        //     listSponsorsAssociate = listSponsorsAssociateDesktop
-        //     listPartenaires = listPartenairesDesktop
-        // }
 
         return (
             <Layout displayHeader="false">
@@ -136,8 +163,8 @@ class Sponsors extends React.Component {
                                 </h2>
                             </header>
                         </div>
-                        {listSponsorsProfessionalMobile}
-                        {listSponsorsProfessionalDesktop}
+                        {listSponsorsProfessionalMobileToDisplay}
+                        {listSponsorsProfessionalDesktopToDisplay}
                     </div>
                 </section>
                 <section id="sponsors-associate" className="main style1">
@@ -152,8 +179,8 @@ class Sponsors extends React.Component {
                                 </h2>
                             </header>
                         </div>
-                        {listSponsorsAssociateMobile}
-                        {listSponsorsAssociateDesktop}
+                        {listSponsorsAssociateMobileToDisplay}
+                        {listSponsorsAssociateDesktopToDisplay}
                     </div>
                 </section>
                 <section id="partenaires" className="main style1">
@@ -169,8 +196,8 @@ class Sponsors extends React.Component {
                                 }
                             </p>
                         </div>
-                        {listPartenairesMobile}
-                        {listPartenairesDesktop}
+                        {listPartenairesMobileToDisplay}
+                        {listPartenairesDesktopToDisplay}
                     </div>
                 </section>
             </Layout>
