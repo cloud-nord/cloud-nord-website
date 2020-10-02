@@ -40,7 +40,6 @@ const NavItem = styled(Link)`
 const NavbarLinks = () => {
   return (
     <>
-      <NavItem to="http://cfp.cloudnord.fr">CFP</NavItem>
       <NavItem to="http://billets.cloudnord.fr/">BILLETTERIE</NavItem>
       <NavItem to="/sponsors">SPONSORS</NavItem>
       <NavItem to="/association">L'ASSO</NavItem>

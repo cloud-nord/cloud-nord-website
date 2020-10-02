@@ -23,7 +23,7 @@ La première session aura lieu le 19 Novembre et proposera différents types de 
 - Des formats conférences de 45 minutes
 - Des sessions de type *deep dive*, conférences longues d'une durée de 2h
 
-Nous avons besoin de vous pour créer le programme le plus qualitatif possible et ravir nos participants. Le [CFP](https://conference-hall.io/public/event/J6FsCDEf8VCmOLArZe8P) est ouvert !
+Nous avons besoin de vous pour créer le programme le plus qualitatif possible et ravir nos participants. La [billetterie](http://billets.cloudnord.fr/) est ouverte !
 
 A bientôt  
 La Team Cloud Nord
