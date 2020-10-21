@@ -1450,3 +1450,63 @@
 			}
 
 	}
+
+/* Agenda */
+	#agenda > table {
+		border-collapse: separate;
+		border-spacing: 0.15rem;
+
+		th,
+		td {
+			padding: 0.5rem 1rem;
+		}
+
+		th {
+			font-weight: normal;
+			border-top: thin dotted #ccc;
+		}
+
+		tr td {
+			position: relative;
+			font-size: 1rem;
+			line-height: 1.4;
+			border-radius: 0.2rem;
+			transition: opacity 0.3s ease;
+			width: 25%;
+			div {
+				position: absolute;
+				bottom: 0;
+				text-align: center;
+				margin-bottom: 0.5rem;
+				span {
+					font-size: 0.9em;
+					font-weight: normal;
+					width: 100%;
+					background-color: rgba(255, 255, 255, 0.4);
+					margin-right: 0.5rem;
+					padding: 0.2rem;
+					border-radius: 0.2rem;
+				}
+			}
+		}
+		td.stage-break {
+			background-image: repeating-linear-gradient(-45deg,
+							transparent 0 30px,
+							_palette(accent2) 10px 40px);
+			vertical-align: middle;
+			text-align: center;
+			p {
+				font-size: large;
+				font-weight: bold;
+				text-transform: uppercase;
+				margin-bottom: 0;
+			}
+		}
+	}
+
+	.stage-qwickie {background-color: _palette(accent1)};
+	.stage-conf {background-color: _palette(accent2)};
+	.stage-keynote {background-color: _palette(accent3)};
+	.stage-orga {background-color: _palette(accent4)};
+	.stage-deepdive {background-color: _palette(accent2-alt)};
+	.stage-accent6 {background-color: _palette(accent6)};
