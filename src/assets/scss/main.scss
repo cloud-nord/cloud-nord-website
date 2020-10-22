@@ -1473,6 +1473,10 @@
 			border-radius: 0.2rem;
 			transition: opacity 0.3s ease;
 			width: 25%;
+			p strong {
+				font-size: large;
+				font-weight: bold;
+			}
 			div {
 				position: absolute;
 				bottom: 0;
@@ -1480,19 +1484,20 @@
 				margin-bottom: 0.5rem;
 				span {
 					font-size: 0.9em;
-					font-weight: normal;
+					font-weight: bold;
+					color: #f1f3f5;
 					width: 100%;
-					background-color: rgba(255, 255, 255, 0.4);
 					margin-right: 0.5rem;
 					padding: 0.2rem;
 					border-radius: 0.2rem;
 				}
 			}
+			.badge-color span{background-color: #555};
 		}
 		td.stage-break {
 			background-image: repeating-linear-gradient(-45deg,
 							transparent 0 30px,
-							_palette(accent2) 10px 40px);
+							_palette(accent4) 10px 40px);
 			vertical-align: middle;
 			text-align: center;
 			p {
@@ -1504,9 +1509,5 @@
 		}
 	}
 
-	.stage-qwickie {background-color: _palette(accent1)};
-	.stage-conf {background-color: _palette(accent2)};
-	.stage-keynote {background-color: _palette(accent3)};
+	.stage-default {background-color: #dee2e6};
 	.stage-orga {background-color: _palette(accent4)};
-	.stage-deepdive {background-color: _palette(accent2-alt)};
-	.stage-accent6 {background-color: _palette(accent6)};
