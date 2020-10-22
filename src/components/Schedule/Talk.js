@@ -7,15 +7,21 @@ class Talk extends React.Component {
         color: "stage-important",
         room: "Salle 1",
         duration: "45 min",
-        category: "DevOps",
-        speaker: ""
+        category: "Orga 2020",
+        speaker: "",
+        company: ""
     }
 
     render() {
         const speaker = this.props.speaker
-        let displaySubjectSpeaker = <p><strong>{this.props.subject}</strong></p>;
+        const company = this.props.company
+        let displaySubjectSpeaker = <p><strong>{this.props.subject}</strong></p>; 
         if (speaker.length > 0) {
-            displaySubjectSpeaker = <p><strong>{this.props.subject}</strong><br/>{speaker}</p>;
+            if(company.length > 0){
+                displaySubjectSpeaker = <p><strong>{this.props.subject}</strong><br/>{speaker} {company}</p>;
+            }
+            else
+                displaySubjectSpeaker = <p><strong>{this.props.subject}</strong><br/>{speaker}</p>;
         }
         return (
             <td
