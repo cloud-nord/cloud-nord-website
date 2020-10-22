@@ -115,7 +115,7 @@ class Agenda extends React.Component {
                                     <Talk color="stage-conf"
                                           subject="Rex : Tencent Multicloud performant entre Europe ET Asie: notre XP!"
                                           speaker="Gilles Closset & Tudor Toma"
-                                          company="@Tencent"
+                                          company="@Tencent Cloud"
                                           duration="45min" room="Salle 3" category="REX"/>
                                     <Talk rowSize="3" color="stage-deepdive"
                                           subject="Hands On : Les mains dans le serverless de Google Cloud"
