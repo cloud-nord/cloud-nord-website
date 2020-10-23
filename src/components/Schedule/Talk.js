@@ -71,11 +71,14 @@ class Talk extends React.Component {
                             <div className="col-12">
                                 <header className="major">
                                     <h3>{this.props.subject}</h3>
+                                    <h5>{this.props.speaker}</h5>
                                 </header>
                                 <p>{this.props.description}</p>
+                                <div className="modal-footer">
+                                    <a className="button special" onClick={this.handleCloseModal}>Close</a>
+                                </div>
                             </div>
                         </div>
-                        <a className="button" onClick={this.handleCloseModal}>Close</a>
                     </section>
                 </Modal>
                 <div className={this.props.badgesColor}>

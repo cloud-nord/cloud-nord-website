@@ -1508,6 +1508,9 @@
 			}
 		}
 	}
-
+	.modal-footer {
+		text-align: center;
+		margin: auto;
+	}
 	.stage-default {background-color: #dee2e6};
 	.stage-orga {background-color: _palette(accent4)};
