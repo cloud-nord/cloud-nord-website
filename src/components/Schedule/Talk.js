@@ -41,7 +41,8 @@ class Talk extends React.Component {
                 right                 : 'auto',
                 bottom                : 'auto',
                 marginRight           : '-50%',
-                transform             : 'translate(-50%, -50%)'
+                transform             : 'translate(-50%, -50%)',
+                maxHeight            : '500px'
             }
         };
         const speaker = this.props.speaker
