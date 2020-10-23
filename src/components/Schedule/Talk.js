@@ -63,7 +63,7 @@ class Talk extends React.Component {
                 {displaySubjectSpeaker}
                 <Modal
                     isOpen={this.state.showModal}
-                    contentLabel="Minimal Modal Example"
+                    contentLabel="Minimal Modal"
                     style={customStylesModal}
                 >
                     <section className="main style1">
@@ -73,7 +73,7 @@ class Talk extends React.Component {
                                     <h3>{this.props.subject}</h3>
                                     <h5>{this.props.speaker}</h5>
                                 </header>
-                                <p>{this.props.description}</p>
+                                <div dangerouslySetInnerHTML={{ __html: this.props.description }}/>
                                 <div className="modal-footer">
                                     <a className="button special" onClick={this.handleCloseModal}>Close</a>
                                 </div>
