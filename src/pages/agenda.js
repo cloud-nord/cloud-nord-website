@@ -33,16 +33,21 @@ class Agenda extends React.Component {
                                           speaker="Laurent Grangeau & Olivier Dupré & Tony Jarriault"
                                           company="@Sogeti"
                                           duration="45min" room="Salle 2" category="DevOps & SRE"
-                                          description="Consommer les services d'un clouder est très simple. Payer beaucoup trop cher aussi. Malgré la promesse d'un cloud à faible coût, il faut avoir une attitude FinOps si on en veut pas voir la facture exploser. Notre objectif est de vous proposer des pistes d'optimisations des coûts sur vos clouds, publiques comme privés. On vous présentera une approche organisationnelle avant de mettre les mains dans le code et vous montrer 2 cas très concrets sur GCP et AWS."/>
+                                          description="Consommer les services d'un clouder est très simple. Payer beaucoup trop cher aussi. Malgré la promesse d'un cloud à faible coût, il faut avoir une attitude FinOps si on en veut pas voir la facture exploser. Notre objectif est de vous proposer des pistes d'optimisations des coûts sur vos clouds, publiques comme privés. On vous présentera une approche organisationnelle avant de mettre les mains dans le code et vous montrer 2 cas très concrets sur GCP et AWS."
+                                    />
                                     <Talk subject="Les bonnes pratiques de sécurité pour les applications Serverless"
                                           speaker="Steve Houel"
                                           company="@AWS"
-                                          duration="45min" room="Salle 3" category="Observabilité"/>
+                                          duration="45min" room="Salle 3" category="Observabilité"
+                                          description="Pour créer et déployer en toute sécurité des applications Serverless, il faut appliquer les meilleures pratiques en matière de sécurité dans le Cloud. Dans cette présentation, vous apprendrez comment configurer votre fonction AWS Lambda et comment mettre en place facilement un système d'authentification et d'autorisation pour Amazon API Gateway. Nous aborderons également la manière dont vous pouvez utiliser Amazon Cognito pour l'authentification et l'autorisation de vos utilisateurs finaux. Vous apprendrez également comment stocker en toute sécurité les secrets de vos applications avec AWS. Cet présentation aborde également la manière de mettre en œuvre les meilleures pratiques de gestion des identités et des accès."
+                                    />
                                     <Talk rowSize="3"
                                           subject="Istio ⛵ par la pratique !"
                                           speaker="Kevin Davin & Nikola Lohinski"
                                           company="@Stack Labs"
-                                          duration="2h" room="Salle 4" category="Cloud Native"/>
+                                          duration="2h" room="Salle 4" category="Cloud Native"
+                                          description="Dans un monde distribué, nous sommes confrontés à de nouveaux problèmes. Les notions de circuit-breaker, de retry, de timeout, de blue-green deployment, A/B testing, pool-ejection… viennent remplacer nos anciens problèmes de monolithe 🙁. Istio ⛵ est là pour nous aider sur tous ces points... et même plus ! 🥰 Nous allons utiliser Istio on GKE sur Google Cloud Platform et découvrir ensemble tout ce que nous pouvons faire pour nos petites applications. Si le traffic mirroring, Canary Release, Traffic splitting ne vous font pas peur, nous pourrons mettre cela en place très facilement ! Nous irons même jusqu'à injecter des erreurs dans notre système #ModeChaos 💥. Nous profiterons aussi des outils offerts par GCP pour suivre les comportements et performances de nos applications en live ❤️."
+                                    />
                                 </tr>
                                 <tr>
                                     <Slot hour="10:30"/>
@@ -121,7 +126,7 @@ class Agenda extends React.Component {
                                           company="@Sfeir"
                                           duration="45min" room="Salle 2" category="DevOps & SRE"/>
                                     <Talk subject="Rex : Leroy Merlin, Make k8s deployments easy again with Turbine"
-                                          speaker="Guillaume Desmidt & Nicolas Lasalle"
+                                          speaker="Guillaume Desmidt & Nicolas Lassalle"
                                           company="@Leroy Merlin France & @Zenika"
                                           duration="45min" room="Salle 3" category="REX"/>
                                 </tr>
