@@ -1,5 +1,6 @@
 import React from "react";
-import Modal from 'react-modal';
+import Modal from 'react-responsive-modal';
+import 'react-responsive-modal/styles.css';
 
 class Talk extends React.Component {
 
@@ -34,17 +35,6 @@ class Talk extends React.Component {
     }
 
     render() {
-        const customStylesModal = {
-            content : {
-                top                   : '50%',
-                left                  : '50%',
-                right                 : 'auto',
-                bottom                : 'auto',
-                marginRight           : '-50%',
-                transform             : 'translate(-50%, -50%)',
-                maxHeight            : '500px'
-            }
-        };
         const speaker = this.props.speaker
         const company = this.props.company
         let displaySubjectSpeaker = <p><strong>{this.props.subject}</strong></p>; 
@@ -63,23 +53,15 @@ class Talk extends React.Component {
             >
                 {displaySubjectSpeaker}
                 <Modal
-                    isOpen={this.state.showModal}
-                    contentLabel="Minimal Modal"
-                    style={customStylesModal}
+                    open={this.state.showModal}
+                    onClose={this.handleCloseModal}
                 >
                     <section className="main style1">
-                        <div className="grid-wrapper">
-                            <div className="col-12">
-                                <header className="major">
-                                    <h3>{this.props.subject}</h3>
-                                    <h5>{this.props.speaker}</h5>
-                                </header>
-                                <div dangerouslySetInnerHTML={{ __html: this.props.description }}/>
-                                <div className="modal-footer">
-                                    <a className="button special" onClick={this.handleCloseModal}>Close</a>
-                                </div>
-                            </div>
-                        </div>
+                        <header className="major">
+                            <h3><strong>{this.props.subject}</strong></h3>
+                            <h5>{this.props.speaker}</h5>
+                        </header>
+                        <div dangerouslySetInnerHTML={{ __html: this.props.description }}/>
                     </section>
                 </Modal>
                 <div className={this.props.badgesColor}>

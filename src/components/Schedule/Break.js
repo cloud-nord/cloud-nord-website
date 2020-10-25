@@ -15,7 +15,7 @@ class Break extends React.Component {
                 rowSpan={this.props.rowSize}
                 className={this.props.color}
             >
-                <p>{this.props.text}</p>
+                <span>{this.props.text}</span>
             </td>
         );
     }

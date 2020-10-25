@@ -1452,65 +1452,76 @@
 	}
 
 /* Agenda */
-	#agenda > table {
-		border-collapse: separate;
-		border-spacing: 0.15rem;
-
-		th,
-		td {
-			padding: 0.5rem 1rem;
-		}
-
-		th {
-			font-weight: normal;
-			border-top: thin dotted #ccc;
-		}
-
-		tr td {
-			position: relative;
-			font-size: 1rem;
-			line-height: 1.4;
-			border-radius: 0.2rem;
-			transition: opacity 0.3s ease;
-			width: 25%;
-			p strong {
-				font-size: large;
-				font-weight: bold;
+	#agenda  {
+		overflow-x: auto;
+		table {
+			border-collapse: separate;
+			border-spacing: 0.15rem;
+			th,
+			td {
+				padding: 0.5rem 1rem;
 			}
-			div {
-				position: absolute;
-				bottom: 0;
-				text-align: center;
-				margin-bottom: 0.5rem;
-				span {
-					font-size: 0.9em;
+			th {
+				font-weight: normal;
+				border-top: thin dotted #ccc;
+			}
+			tr td {
+				position: relative;
+				font-size: 1rem;
+				line-height: 1.4;
+				border-radius: 0.2rem;
+				transition: opacity 0.3s ease;
+				width: 25%;
+				p strong {
+					font-size: large;
 					font-weight: bold;
-					color: #f1f3f5;
-					width: 100%;
-					margin-right: 0.5rem;
-					padding: 0.2rem;
+				}
+				div {
+					position: absolute;
+					bottom: 0;
+					text-align: center;
+					margin-bottom: 0.5rem;
+					span {
+						font-size: 0.9em;
+						font-weight: bold;
+						color: #f1f3f5;
+						width: 100%;
+						margin-right: 0.5rem;
+						padding: 0.2rem;
+						border-radius: 0.2rem;
+					}
+				}
+				.badge-color span{background-color: #555};
+			}
+			td.stage-break {
+				background-image: repeating-linear-gradient(-45deg,
+								transparent 0 30px,
+								_palette(accent4) 10px 40px);
+				vertical-align: middle;
+				text-align: center;
+				span {
+					font-size: large;
+					font-weight: bold;
+					text-transform: uppercase;
+					margin-bottom: 0;
+					background-color: #fff;
 					border-radius: 0.2rem;
+					padding: 0.1rem;
 				}
 			}
-			.badge-color span{background-color: #555};
 		}
-		td.stage-break {
-			background-image: repeating-linear-gradient(-45deg,
-							transparent 0 30px,
-							_palette(accent4) 10px 40px);
-			vertical-align: middle;
-			text-align: center;
-			p {
-				font-size: large;
-				font-weight: bold;
-				text-transform: uppercase;
-				margin-bottom: 0;
+
+		.stage-default {background-color: #dee2e6};
+		.stage-orga {background-color: _palette(accent4)};
+
+		@media (max-width: 1073px){
+			td {
+				min-width: 14rem;
 			}
 		}
 	}
-	.modal-footer {
-		text-align: center;
-		margin: auto;
+
+	.react-responsive-modal-closeButton {
+		box-shadow: none;
+		height: 0;
 	}
-	.stage-default {background-color: #dee2e6};
-	.stage-orga {background-color: _palette(accent4)};

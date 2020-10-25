@@ -3,12 +3,35 @@ import React from "react";
 import Talk from "../components/Schedule/Talk";
 import Slot from "../components/Schedule/Slot";
 import Break from "../components/Schedule/Break";
+import {graphql} from "gatsby";
+import Img from "gatsby-image";
 
 class Agenda extends React.Component {
     render() {
+        const mobileImageStyle = {
+            marginTop: "1rem",
+            width: "6rem",
+        };
+        const sponsorsProfessionalLinks = [
+            { linkTo: "https://azure.microsoft.com/fr-fr/" },
+            { linkTo: "https://www.claranet.fr" }
+        ];
+        const listSponsorsProfessionalMobile = this.props.data.sponsorsProfessionalLogosMobile.edges.map(
+            (o, i) => Object.assign({}, o, sponsorsProfessionalLinks[i])
+        );
+        const listSponsorsProfessionalMobileToDisplay = listSponsorsProfessionalMobile.map(
+            edge => (
+                <div style={mobileImageStyle}>
+                    <a href={edge.linkTo}>
+                        <Img fluid={edge.node.childImageSharp.fluid} />
+                    </a>
+                </div>
+            )
+        );
         return (
             <Layout displayHeader="false">
                 <div className="grid-wrapper">
+                    {listSponsorsProfessionalMobileToDisplay}
                     <div className="col-12">
                         <section id="agenda" className="main style1">
                             <table>
@@ -105,10 +128,11 @@ class Agenda extends React.Component {
                                 <tr>
                                     <Slot hour="12:15"/>
                                     <Talk colSize="4" color="stage-orga"
-                                          subject="Cloud Guru, DevSecOps, SRE, SysOps, Cloud Builder, DevOps, Triceratops…. Finalement c’est quoi les métiers du cloud en 2020 ? L’occasion de comprendre ce que sont les métiers du Cloud en 2020, comment recruter, faire évoluer et animer ses équipes pour construire son organisation de demain"
+                                          subject="Cloud Guru, DevSecOps, SRE, SysOps, Cloud Builder, DevOps, Triceratops…. Finalement c’est quoi les métiers du cloud en 2020 ?"
                                           duration="1h30"
                                           category="Table ronde"
                                           speaker="We Love Devs"
+                                          description="L’occasion de comprendre ce que sont les métiers du Cloud en 2020, comment recruter, faire évoluer et animer ses équipes pour construire son organisation de demain."
                                           room="Salle 1"/>
                                 </tr>
                                 <tr>
@@ -220,7 +244,7 @@ class Agenda extends React.Component {
                                 </tr>
                                 <tr>
                                     <Slot hour="17:30"/>
-                                    <Talk colSize="4" color="stage-orga" 
+                                    <Talk colSize="4" color="stage-orga"
                                           subject="A l’arvoyure: Take away & Mot de la fin 🍻"
                                           room="Salle 1"/>
                                 </tr>
@@ -233,5 +257,26 @@ class Agenda extends React.Component {
         );
     }
 }
+export const pageQuery = graphql`
+    query AgendaQuery {
+        sponsorsProfessionalLogosMobile: allFile(
+            filter: {
+                extension: { regex: "/(png|jpe?g)/" }
+                relativePath: { regex: "/sponsors/professional/mobile/" }
+            }
+            sort: { fields: childImageSharp___resolutions___originalName, order: ASC }
+        ) {
+            edges {
+                node {
+                    childImageSharp {
+                        fluid {
+                            ...GatsbyImageSharpFluid
+                        }
+                    }
+                }
+            }
+        }
+    }
+`;
 
 export default Agenda;
