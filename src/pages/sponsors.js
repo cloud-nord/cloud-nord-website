@@ -13,11 +13,13 @@ class Sponsors extends React.Component {
 
     const sponsorsProfessionalLinks = [
       { linkTo: "https://azure.microsoft.com/fr-fr/" },
+      { linkTo: "https://aws.amazon.com/fr/" },
       { linkTo: "https://www.claranet.fr" }
     ];
 
     const sponsorsAssociateLinks = [
       { linkTo: "https://www.axa.fr/" },
+      { linkTo: "https://www.adeo.com" },
       { linkTo: "https://fr.ippon.tech/" },
       { linkTo: "https://www.exoscale.com/" }
     ];

@@ -14,6 +14,7 @@ class Agenda extends React.Component {
         };
         const sponsorsProfessionalLinks = [
             { linkTo: "https://azure.microsoft.com/fr-fr/" },
+            { linkTo: "https://aws.amazon.com/fr/" },
             { linkTo: "https://www.claranet.fr" }
         ];
         const listSponsorsProfessionalMobile = this.props.data.sponsorsProfessionalLogosMobile.edges.map(
