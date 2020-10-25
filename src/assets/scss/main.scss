@@ -1518,6 +1518,9 @@
 			display: flex;
 			align-items: center;
 			margin-bottom: 2rem;
+			.col-3 {
+				margin-right: 1rem;
+			}
 		}
 
 		@media (max-width: 1073px){
