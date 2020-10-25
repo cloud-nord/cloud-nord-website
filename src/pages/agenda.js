@@ -217,7 +217,7 @@ class Agenda extends React.Component {
                                           speaker="Philippe Charrière"
                                           company="@Gitlab"
                                           duration="45min" room="Salle 4" category="DevOps & SRE"
-                                          description=""
+                                          description="<p>La fonctionnalité de &quot;Code Quality&quot; est passée dans &quot;GitLab Core&quot; il y a déjà un moment (elle permet d'effectuer des tests de qualité, comme exécuter des linters par exemple), et certains SAST Analyzers sont eux aussi passés  dans &quot;GitLab Core&quot; plus récemment  (ils permettent de détecter des vulnérabilités dans votre code).</p><p>Mais saviez vous que vous pouvez utiliser vos propres outils  à la place de ceux fournis par défaut?</p><p>Je vous expliquerai:</p><ul><li>Les fonctionnement de base</li><li>Comment  utiliser <strong>EsLint</strong> avec le <strong>Code Quality</strong> et afficher les résultats dans vos merge requests</li><li>Comment rechercher des 🦁 ou des 🐯 dans votre projet avec votre propre &quot;scanner SAST&quot; </li><li>Nous verrons ce que l'on peut faire des reports générés par SAST quand on est dans &quot;GitLab Core&quot; (l'affichage détaillé des vulnérabilités n'existant que dans une des version entreprise)</li></ul><p>Avec ça, vous repartirez avec une meilleure compréhension de ces 2 fonctionnalités, et les outils pour améliorer votre CI 🎉</p>"
                                     />
                                 </tr>
                                 <tr>
