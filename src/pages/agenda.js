@@ -21,7 +21,7 @@ class Agenda extends React.Component {
         );
         const listSponsorsProfessionalMobileToDisplay = listSponsorsProfessionalMobile.map(
             edge => (
-                <div style={mobileImageStyle}>
+                <div className="col-3" style={mobileImageStyle}>
                     <a href={edge.linkTo}>
                         <Img fluid={edge.node.childImageSharp.fluid} />
                     </a>
@@ -31,9 +31,13 @@ class Agenda extends React.Component {
         return (
             <Layout displayHeader="false">
                 <div className="grid-wrapper">
-                    {listSponsorsProfessionalMobileToDisplay}
                     <div className="col-12">
                         <section id="agenda" className="main style1">
+                            <span><strong>Nos sponsors professional :</strong></span>
+                            <div className="sponsors-pro">
+                                {listSponsorsProfessionalMobileToDisplay}
+                            </div>
+                            <p>Tous nos sponsors et partenaires sont visibles <a href="/sponsors">ici</a>.</p>
                             <table>
                                 <tbody>
                                 <tr>

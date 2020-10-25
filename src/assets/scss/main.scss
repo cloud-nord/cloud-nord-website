@@ -1514,6 +1514,12 @@
 		.stage-default {background-color: #dee2e6};
 		.stage-orga {background-color: _palette(accent4)};
 
+		.sponsors-pro {
+			display: flex;
+			align-items: center;
+			margin-bottom: 2rem;
+		}
+
 		@media (max-width: 1073px){
 			td {
 				min-width: 14rem;
