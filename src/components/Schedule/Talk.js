@@ -59,7 +59,7 @@ class Talk extends React.Component {
                     <section className="main style1">
                         <header className="major">
                             <h3><strong>{this.props.subject}</strong></h3>
-                            <h5>{this.props.speaker}</h5>
+                            <h5>{this.props.speaker} {company}</h5>
                         </header>
                         <div dangerouslySetInnerHTML={{ __html: this.props.description }}/>
                     </section>

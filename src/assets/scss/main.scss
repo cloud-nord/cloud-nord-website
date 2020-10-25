@@ -1525,3 +1525,166 @@
 		box-shadow: none;
 		height: 0;
 	}
+
+	.react-responsive-modal-modal {
+		ul {
+			list-style: disc;
+			margin: 0 0 _size(element-margin) 0;
+			padding-left: 1em;
+
+			li {
+				padding-left: 0.5em;
+				text-align: left;
+			}
+
+			li:after {
+				display: none;
+			}
+
+			&.alt {
+				list-style: none;
+				padding-left: 0;
+
+				li {
+					border-top: solid 1px _palette(border);
+					padding: 0.5em 0;
+
+					&:first-child {
+						border-top: 0;
+						padding-top: 0;
+					}
+				}
+			}
+
+			&.icons {
+				cursor: default;
+				list-style: none;
+				padding-left: 0;
+
+				li {
+					display: inline-block;
+					padding: 0 1.25em 0 0;
+
+					&:last-child {
+						padding-right: 0;
+					}
+
+					.icon {
+						&:before {
+							font-size: 1.5em;
+						}
+					}
+				}
+			}
+
+			&.major-icons {
+				list-style: none;
+				padding-left: 0;
+
+				li {
+					display: inline-block;
+					padding: 2.5em;
+					text-align: center;
+
+					.icon {
+						@include vendor('transform', 'rotate(45deg)');
+						border-radius: _size(border-radius);
+						border: solid 1px _palette(border);
+						display: inline-block;
+						height: 8em;
+						line-height: 8em;
+						margin: 0;
+						text-align: center;
+						width: 8em;
+
+						&:before {
+							@include vendor('transform', 'rotate(-45deg)');
+							display: inline-block;
+							line-height: inherit;
+						}
+					}
+				}
+			}
+
+			&.actions {
+				cursor: default;
+				list-style: none;
+				padding-left: 0;
+
+				li {
+					display: inline-block;
+					padding: 0 (_size(element-margin) * 0.5) 0 0;
+					vertical-align: middle;
+
+					&:last-child {
+						padding-right: 0;
+					}
+				}
+
+				&.small {
+					li {
+						padding: 0 (_size(element-margin) * 0.25) 0 0;
+					}
+				}
+
+				&.vertical {
+					li {
+						display: block;
+						padding: (_size(element-margin) * 0.5) 0 0 0;
+
+						&:first-child {
+							padding-top: 0;
+						}
+
+						> * {
+							margin-bottom: 0;
+						}
+					}
+
+					&.small {
+						li {
+							padding: (_size(element-margin) * 0.25) 0 0 0;
+
+							&:first-child {
+								padding-top: 0;
+							}
+						}
+					}
+				}
+
+				&.uniform {
+					li {
+						> * {
+							min-width: 12em;
+						}
+					}
+				}
+
+				&.fit {
+					display: table;
+					margin-left: (_size(element-margin) * -0.5);
+					padding: 0;
+					table-layout: fixed;
+					width: calc(100% + #{(_size(element-margin) * 0.5)});
+
+					li {
+						display: table-cell;
+						padding: 0 0 0 (_size(element-margin) * 0.5);
+
+						> * {
+							margin-bottom: 0;
+						}
+					}
+
+					&.small {
+						margin-left: (_size(element-margin) * -0.25);
+						width: calc(100% + #{(_size(element-margin) * 0.25)});
+
+						li {
+							padding: 0 0 0 (_size(element-margin) * 0.25);
+						}
+					}
+				}
+			}
+		}
+	}
