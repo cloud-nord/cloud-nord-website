@@ -1493,10 +1493,10 @@
 				}
 				.badge-color span{background-color: #555};
 			}
-			td.stage-break {
+			.stage-break {
 				background-image: repeating-linear-gradient(-45deg,
-								transparent 0 30px,
-								_palette(accent4) 10px 40px);
+								transparent 0 20px,
+								_palette(accent4) 20px 30px);
 				vertical-align: middle;
 				text-align: center;
 				span {
