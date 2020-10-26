@@ -97,7 +97,7 @@ class Agenda extends React.Component {
                                           duration="45min" room="Salle 2" category="DevOps & SRE"
                                           description="Mise en oeuvre, à partir d'un projet .Net Core et de script Terraform, d'un pipeline d'intégration et déploiement continu avec Azure DevOps pour déployer une application dans un cluster Kubernetes sur Azure, AWS et GCP."
                                     />
-                                    <Talk subject="REX : Comment créer une solution de log management à l’aide de Datadog ?"
+                                    <Talk subject="Rex : Transfo Cloud Nexity - Log Factory Datadog : One tool to rule them all"
                                           speaker="Anthony Durot & Xavier Top"
                                           company="@Ippon & @Nexity"
                                           duration="45min" room="Salle 3" category="REX"
@@ -108,25 +108,25 @@ class Agenda extends React.Component {
                                     <Slot hour="11:50"/>
                                     <Talk subject="Introduction à AWS : son Histoire, son Leadership, ses Clients, ses Services"
                                           speaker="Olivier Lemaitre"
-                                          duration="15min" room="Salle 1" category="Cloud Native"
+                                          duration="20min" room="Salle 1" category="Cloud Native"
                                           description="Comment Amazon est devenu un fournisseur cloud computing ? Pourquoi est-il toujours le numéro un dans ce secteur ? Qui sont ses clients et quels avantages en tirent-ils ? Quels sont ses services phares ? Cette introduction est faites pour les personnes qui se posent des questions sur AWS, qui veulent découvrir cette plateforme ou simplement savoir si elle peut être adaptée à leur contexte."
                                     />
                                     <Talk subject="Kubernetes enfin ultra simple & léger avec K3S"
                                           speaker="Sébastien Moreno"
                                           company="@Ippon"
-                                          duration="15min" room="Salle 2" category="Orchestration"
+                                          duration="20min" room="Salle 2" category="Orchestration"
                                           description="L'installation d'un cluster Kubernetes a longtemps été une tâche lourde pour l'Ops ou le Dev. Mais on arrive maintenant dans une ère de maturité dans les distributions Kubernetes, avec notamment Rancher, Openshift... mais aussi les installeurs du cloud comme EKS de AWS. Ici je propose d'explorer dans un Quickie une autre distribution issue de Rancher, ultra-légère, ultra simple, prête pour la prod et l'IOT. K3S débarrasse Kubernetes de sa complexité de ses plugins superflus et change Kubernetes en simple binaire à lancer sur vos machines. Au programme: explication de ce que ça cache sous le capot et de la démo !"
                                     />
                                     <Talk subject="Cloud Souverain, par où commencer ?"
                                           speaker="Christophe Chaudier"
                                           company="@Youtube 'Les Compagnons du DevOps'"
-                                          duration="15min" room="Salle 3" category="Cloud Native"
+                                          duration="20min" room="Salle 3" category="Cloud Native"
                                           description=""
                                     />
                                     <Talk subject="Démystifier GitOps"
                                           speaker="Mohamed Chaaben"
                                           company="@Revolve"
-                                          duration="15min" room="Salle 4" category="DevOps & SRE"
+                                          duration="20min" room="Salle 4" category="DevOps & SRE"
                                           description="GitOps est un workflow qui permet d'optimiser, fluidifier et sécuriser les mises en production grâce à un système de gestion de versions. Depuis son apparition en 2017 via un article de blog dans le site de Weave works, cette méthode commence à devenir de plus en plus populaire. GitOps est synonyme de “opérations by pull request”. Mais qu'est-ce qu'il se cache vraiment derrière ce terme et pourquoi faut-il envisager d’appliquer cette méthode dans vos projets? Durant ce talk, nous allons démystifier le workflow GitOps et passer en revue les modèles d'implémentation. Le présentation se termine avec une démo de mise en place."
                                     />
                                 </tr>
