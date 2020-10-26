@@ -250,7 +250,7 @@ class Agenda extends React.Component {
                                 <tr>
                                     <Slot hour="17:30"/>
                                     <Talk colSize="4" color="stage-orga"
-                                          subject="A l’arvoyure: Take away & Mot de la fin 🍻"
+                                          subject="On se dit quoi: Take away & Mot de la fin 🍻"
                                           room="Salle 1"/>
                                 </tr>
                                 </tbody>
