@@ -1495,7 +1495,7 @@
 			}
 			.stage-break {
 				background-image: repeating-linear-gradient(-45deg,
-								transparent 0 20px,
+								transparent 1px 20px,
 								_palette(accent4) 20px 30px);
 				vertical-align: middle;
 				text-align: center;
@@ -1532,7 +1532,7 @@
 
 	.react-responsive-modal-closeButton {
 		box-shadow: none;
-		height: 0;
+		height: auto;
 	}
 
 	.react-responsive-modal-modal {
