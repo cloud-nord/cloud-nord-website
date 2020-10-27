@@ -13,7 +13,7 @@ class Agenda extends React.Component {
             width: "6rem",
         };
         const sponsorsProfessionalLinks = [
-            { linkTo: "https://azure.microsoft.com/fr-fr/" },
+            { linkTo: "https://www.microsoft.com/fr-fr/" },
             { linkTo: "https://aws.amazon.com/fr/" },
             { linkTo: "https://www.claranet.fr" }
         ];
@@ -205,7 +205,7 @@ class Agenda extends React.Component {
                                           speaker="Alexis Moussine-Pouchkine"
                                           company="@Google"
                                           duration="45min" room="Salle 2" category="Cloud Native"
-                                          description="À venir."
+                                          description="Serverless c'est le nirvana pour les devs: pas de serveur, pas de cluster, juste un infra qui s'adapte à la demande. Mais alors a-t-on même besoin de gérer la prod? Comment savoir si le service est bien délivré? Cette session déclinera les bonnes pratiques DevOps/SRE au serverless pour impliquer dev et prod autour d'un objectif commun et pragmatique à l'aide d'outils. Venez voir si le nirvana est possible pour les prods comme pour les devs! Demo incluse."
                                     />
                                     <Talk subject="Rex : Le modèle Prismea pour lancer sa Fintech sur AWS"
                                           speaker="Samuel Bailly & Clément Vessella"
