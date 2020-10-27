@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { Link } from "gatsby";
+import {Link} from "gatsby";
 
 const NavItem = styled(Link)`
   text-decoration: none;
@@ -38,13 +38,14 @@ const NavItem = styled(Link)`
   }
 `;
 const NavbarLinks = () => {
-  return (
-    <>
-      <NavItem to="http://billets.cloudnord.fr/">BILLETTERIE</NavItem>
-      <NavItem to="/sponsors">SPONSORS</NavItem>
-      <NavItem to="/association">L'ASSO</NavItem>
-    </>
-  );
+    return (
+        <>
+            <NavItem to="http://billets.cloudnord.fr/">BILLETTERIE</NavItem>
+            <NavItem to="/agenda">AGENDA</NavItem>
+            <NavItem to="/sponsors">SPONSORS</NavItem>
+            <NavItem to="/association">L'ASSO</NavItem>
+        </>
+    );
 };
 
 export default NavbarLinks;
