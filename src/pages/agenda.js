@@ -121,7 +121,7 @@ class Agenda extends React.Component {
                                           speaker="Christophe Chaudier"
                                           company="@Youtube 'Les Compagnons du DevOps'"
                                           duration="20min" room="Salle 3" category="Cloud Native"
-                                          description=""
+                                          description="À venir."
                                     />
                                     <Talk subject="Démystifier GitOps"
                                           speaker="Mohamed Chaaben"
@@ -136,7 +136,7 @@ class Agenda extends React.Component {
                                           subject="Cloud Guru, DevSecOps, SRE, SysOps, Cloud Builder, DevOps, Triceratops…. Finalement c’est quoi les métiers du cloud en 2020 ?"
                                           duration="1h30"
                                           category="Table ronde"
-                                          speaker="We Love Devs"
+                                          speaker="We Love Devs & Sponsors"
                                           description="L’occasion de comprendre ce que sont les métiers du Cloud en 2020, comment recruter, faire évoluer et animer ses équipes pour construire son organisation de demain."
                                           room="Salle 1"/>
                                 </tr>
@@ -205,7 +205,7 @@ class Agenda extends React.Component {
                                           speaker="Alexis Moussine-Pouchkine"
                                           company="@Google"
                                           duration="45min" room="Salle 2" category="Cloud Native"
-                                          description=""
+                                          description="À venir."
                                     />
                                     <Talk subject="Rex : Le modèle Prismea pour lancer sa Fintech sur AWS"
                                           speaker="Samuel Bailly & Clément Vessella"
