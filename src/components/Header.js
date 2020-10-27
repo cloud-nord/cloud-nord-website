@@ -39,7 +39,7 @@ class Header extends React.Component {
               <ul className="actions">
                 <li>
                   <a
-                    href="https://cloudnord2020.typeform.com/to/Z1YdP1LB"
+                    href="/agenda"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="button scrolly"
