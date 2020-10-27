@@ -80,7 +80,7 @@ class Agenda extends React.Component {
                                     />
                                 </tr>
                                 <tr>
-                                    <Slot hour="10:30"/>
+                                    <Slot hour=""/>
                                     <Break colSize="3" text="Pause"/>
                                 </tr>
                                 <tr>
@@ -190,7 +190,7 @@ class Agenda extends React.Component {
                                     />
                                 </tr>
                                 <tr>
-                                    <Slot hour="15:25"/>
+                                    <Slot hour=""/>
                                     <Break colSize="3" text="Pause"/>
                                 </tr>
                                 <tr>
