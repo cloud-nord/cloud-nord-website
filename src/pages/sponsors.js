@@ -21,7 +21,8 @@ class Sponsors extends React.Component {
       { linkTo: "https://www.axa.fr/" },
       { linkTo: "https://www.adeo.com" },
       { linkTo: "https://fr.ippon.tech/" },
-      { linkTo: "https://www.exoscale.com/" }
+      { linkTo: "https://www.exoscale.com/" },
+      { linkTo: "https://www.nutanix.com/fr" },
     ];
 
     const partenairesLinks = [
