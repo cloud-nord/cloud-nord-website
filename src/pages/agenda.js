@@ -173,7 +173,7 @@ class Agenda extends React.Component {
                                     <Talk subject="Optimiser son déploiement Spring Boot dans le cloud"
                                           speaker="Julien Dubois"
                                           company="@Microsoft"
-                                          duration="45min" room="Salle 2" category="DevOps & SRE"
+                                          duration="45min" room="Salle 1" category="DevOps & SRE"
                                           description="<p>Azure propose de nombreuses librairies et outils destinés aux utilisateurs de Spring Boot, permettant de déployer leurs applications dans le cloud de manière plus simple et plus efficace. Nous verrons dans cette session:</p><ul><li>Les options de déploiement: VM, Azure App Service, Azure Kubernetes Service, Azure Functions, Azure Spring Cloud...</li><li>Les starters Spring Boot disponibles</li><li>Azure Devops et GitHub Actions pour test et déployer</li><li>Le monitoring avec Azure Monitor</li><li>De nombreuses astuces pour optimiser sa production</li></ul>"
                                     />
                                     <Talk subject="SRE, où comment on laisse la Prod voyager de ses propres ailes"
@@ -231,7 +231,7 @@ class Agenda extends React.Component {
                                     <Talk subject="Créer une application Cloud Native avec Quarkus et Google Cloud Functions"
                                           speaker="Loïc Mathieu"
                                           company="@Zenika"
-                                          duration="45min" room="Salle 1" category="Cloud Native"
+                                          duration="45min" room="Salle 2" category="Cloud Native"
                                           description="<p>Après une présentation rapide du framework Quarkus, je vais développer et déployer une application dans Google Cloud à base uniquement de fonctions, via les extensions Quarkus google-cloud-functions, google-cloud-functions-http et funqy-google-cloud-functions.</p><p>Cette application exposera une API REST et utilisera des fonctionnalités offerte par Google Cloud telle que Google Cloud Storage et Google Cloud Pub/Sub.</p>"
                                     />
                                     <Talk subject="Rex : Marketplace ADEO : Avec Gitops, arrête de bricoler ton cluster"
