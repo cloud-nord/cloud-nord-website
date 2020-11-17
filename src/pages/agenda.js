@@ -119,9 +119,9 @@ class Agenda extends React.Component {
                                     />
                                     <Talk subject="Cloud Souverain, par où commencer ?"
                                           speaker="Christophe Chaudier"
-                                          company="@Youtube 'Les Compagnons du DevOps'"
+                                          company="@Lydra 'Les Compagnons du DevOps'"
                                           duration="20min" room="Salle 3" category="Cloud Native"
-                                          description="À venir."
+                                          description="C’est quoi la Souveraineté Numérique et pourquoi je devrais m’y intéresser ?<br/>Ok je suis convaincu mais comment je fais maintenant ?<br/>C’est quoi les clouds « souverains » ?</br>Il y en a en France ?"
                                     />
                                     <Talk subject="Démystifier GitOps"
                                           speaker="Mohamed Chaaben"
