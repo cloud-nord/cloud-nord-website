@@ -51,7 +51,9 @@ class Agenda extends React.Component {
                                     <Talk colSize="4" color="stage-orga" subject="Keynote - Comment être un bon citoyen du Cloud ?" duration="30min"
                                           room="Salle 1"
                                           speaker="Sébastien Blanc"
-                                          company = "@Redhat"/>
+                                          company = "@Redhat"
+                                          description="Tout est dans le titre 😉"
+                                    />
                                 </tr>
                                 <tr>
                                     <Slot hour="09:45"/>
