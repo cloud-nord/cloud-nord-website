@@ -48,7 +48,7 @@ class Agenda extends React.Component {
                                 </tr>
                                 <tr>
                                     <Slot hour="09:15"/>
-                                    <Talk colSize="4" color="stage-orga" subject="Keynote" duration="30min"
+                                    <Talk colSize="4" color="stage-orga" subject="Keynote - Comment être un bon citoyen du Cloud ?" duration="30min"
                                           room="Salle 1"/>
                                 </tr>
                                 <tr>
