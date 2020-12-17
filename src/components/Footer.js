@@ -23,6 +23,14 @@ class Footer extends React.Component {
           </li>
           <li>
             <a
+                href="https://www.youtube.com/channel/UCD_iUcnDZgFlU_7fBmWH3tA"
+                className="icon alt fa-youtube"
+            >
+              <span className="label">Youtube</span>
+            </a>
+          </li>
+          <li>
+            <a
               href="mailto:cloudnord2020@gmail.com"
               className="icon alt fa-envelope"
             >
